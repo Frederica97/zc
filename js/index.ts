@@ -1,3 +1,7 @@
+
+const workMenu : HTMLElement = <HTMLElement>document.getElementById("Menu-work");
+const contactMenu : HTMLElement = <HTMLElement>document.getElementById("Menu-contact");
+
 const portfolio_01: HTMLElement = <HTMLElement>document.getElementById("01");
 const portfolio_02: HTMLElement = <HTMLElement>document.getElementById("02");
 const portfolio_03: HTMLElement = <HTMLElement>document.getElementById("03");
@@ -12,9 +16,6 @@ const portfolio_11: HTMLElement = <HTMLElement>document.getElementById("11");
 const portfolio_12: HTMLElement = <HTMLElement>document.getElementById("12");
 const portfolio_13: HTMLElement = <HTMLElement>document.getElementById("13");
 const cover: HTMLElement = <HTMLElement>document.getElementById("cover");
-const contact: HTMLElement = <HTMLElement>document.getElementById("contact");
-const contactContent = contact.querySelectorAll("p")
-
 
 
 const portfolio: HTMLElement = <HTMLElement>document.getElementById("portfolio");
@@ -37,18 +38,57 @@ const portfolio_set: HTMLElement[] = [
 ];
 
 
+function expand(element: HTMLElement){
+    let line: HTMLElement = <HTMLElement>element.querySelector(".mark")
+    line.style.height = "170px"
+    line.style.width = "5px"
+    line.style.transition = "all 1s";
+    let info: HTMLElement = <HTMLElement>element.querySelector(".info") 
+    info.removeAttribute("hidden"); 
+    let grid: HTMLElement = <HTMLElement>element.querySelector(".grid")
+    grid.classList.add("grid-active");
+}
+
+function collapse(element: HTMLElement){
+    let line: HTMLElement = <HTMLElement>element.querySelector(".mark")
+    line.style.height = "10px"
+    line.style.width = "10px"
+    line.style.transition = "all 0s";
+    let info: HTMLElement = <HTMLElement>element.querySelector(".info")
+    info.setAttribute("hidden", "true");
+    line.style.transition = "all 0s";
+    let grid: HTMLElement = <HTMLElement>element.querySelector(".grid")
+    grid.classList.remove("grid-active");
+}
+function collapseOthers(element: HTMLElement){
+    portfolio_set.forEach((p) => {
+        if (p != element){
+            collapse(p);
+        }
+    }); 
+}
+
 function indexHover(element: HTMLElement) {
     if (element) {
         element.addEventListener('mouseover', () => {
             let pattern: string = "repeat(13, 12px";
-            if (element == portfolio_02) {
-                if (cover) {
+
+            // deal with first image, change the left-bar color
+            if (cover){
+                if (element == portfolio_02) {
                     cover.style.borderLeftColor = "#fff";
-                }
-            } else {
-                if (cover) {
+                } else {
                     cover.style.borderLeftColor = "#ccd3d9";
                 }
+            }
+
+            //collapse others
+            if (element != portfolio_13){
+                collapse(portfolio_13)
+            }
+            //collapse others
+            if (element != portfolio_04){
+                collapse(portfolio_04)
             }
 
             for (let i = 1; i < portfolio_set.length; i++) {
@@ -62,28 +102,7 @@ function indexHover(element: HTMLElement) {
                 portfolio.style.gridTemplateColumns = pattern + ")";
                 portfolio.style.transition = "all 1s";
             }
-            let line: HTMLElement = <HTMLElement>element.querySelector(".mark")
-            line.style.height = "170px"
-            line.style.width = "5px"
-            line.style.transition = "all 1s";
-            let info: HTMLElement = <HTMLElement>element.querySelector(".info") 
-            info.removeAttribute("hidden"); 
-
-            let grid: HTMLElement = <HTMLElement>element.querySelector(".grid")
-            grid.classList.add("grid-active");
-
-            // set the contact format 
-            if (element == portfolio_13) {
-                contact.removeAttribute("hidden"); 
-                contactContent.forEach(c => {
-                    c.classList.remove('invisible');
-                });
-            }else{
-                contact.setAttribute("hidden", "true");
-                contactContent.forEach(c => {
-                    c.classList.add('invisible');
-                });
-            }
+            expand(element)
         }, false);
     }
 }
@@ -98,22 +117,32 @@ function indexHoverOver(element: HTMLElement) {
                 portfolio.style.gridTemplateColumns = "repeat(13, 12px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px)";
                 portfolio.style.transition = "all 1s";
             }
-            let line: HTMLElement = <HTMLElement>element.querySelector(".mark")
-            line.style.height = "10px"
-            line.style.width = "10px"
-            line.style.transition = "all 0s";
-            let info: HTMLElement = <HTMLElement>element.querySelector(".info")
-            info.setAttribute("hidden", "true");
-            line.style.transition = "all 0s";
-            contact.setAttribute("hidden", "true");
-            contactContent.forEach(c => {
-                c.classList.add('invisible');
-            });
-            let grid: HTMLElement = <HTMLElement>element.querySelector(".grid")
-            grid.classList.remove("grid-active");
+            collapse(element)
         }, false);
     }
 }
+
+// click that Contact
+contactMenu.addEventListener("click", () => {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_04)
+    expand(portfolio_13)
+});
+
+//click that work
+workMenu.addEventListener("click", () => {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_13)
+    expand(portfolio_04)
+    
+});
+
 
 
 function indexRefresh() {

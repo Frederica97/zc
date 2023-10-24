@@ -1,3 +1,5 @@
+var workMenu = document.getElementById("Menu-work");
+var contactMenu = document.getElementById("Menu-contact");
 var portfolio_01 = document.getElementById("01");
 var portfolio_02 = document.getElementById("02");
 var portfolio_03 = document.getElementById("03");
@@ -12,8 +14,6 @@ var portfolio_11 = document.getElementById("11");
 var portfolio_12 = document.getElementById("12");
 var portfolio_13 = document.getElementById("13");
 var cover = document.getElementById("cover");
-var contact = document.getElementById("contact");
-var contactContent = contact.querySelectorAll("p");
 var portfolio = document.getElementById("portfolio");
 var portfolio_set = [
     portfolio_01,
@@ -30,19 +30,54 @@ var portfolio_set = [
     portfolio_12,
     portfolio_13
 ];
+function expand(element) {
+    var line = element.querySelector(".mark");
+    line.style.height = "170px";
+    line.style.width = "5px";
+    line.style.transition = "all 1s";
+    var info = element.querySelector(".info");
+    info.removeAttribute("hidden");
+    var grid = element.querySelector(".grid");
+    grid.classList.add("grid-active");
+}
+function collapse(element) {
+    var line = element.querySelector(".mark");
+    line.style.height = "10px";
+    line.style.width = "10px";
+    line.style.transition = "all 0s";
+    var info = element.querySelector(".info");
+    info.setAttribute("hidden", "true");
+    line.style.transition = "all 0s";
+    var grid = element.querySelector(".grid");
+    grid.classList.remove("grid-active");
+}
+function collapseOthers(element) {
+    portfolio_set.forEach(function (p) {
+        if (p != element) {
+            collapse(p);
+        }
+    });
+}
 function indexHover(element) {
     if (element) {
         element.addEventListener('mouseover', function () {
             var pattern = "repeat(13, 12px";
-            if (element == portfolio_02) {
-                if (cover) {
+            // deal with first image, change the left-bar color
+            if (cover) {
+                if (element == portfolio_02) {
                     cover.style.borderLeftColor = "#fff";
                 }
-            }
-            else {
-                if (cover) {
+                else {
                     cover.style.borderLeftColor = "#ccd3d9";
                 }
+            }
+            //collapse others
+            if (element != portfolio_13) {
+                collapse(portfolio_13);
+            }
+            //collapse others
+            if (element != portfolio_04) {
+                collapse(portfolio_04);
             }
             for (var i = 1; i < portfolio_set.length; i++) {
                 if (portfolio_set[i] == element) {
@@ -56,27 +91,7 @@ function indexHover(element) {
                 portfolio.style.gridTemplateColumns = pattern + ")";
                 portfolio.style.transition = "all 1s";
             }
-            var line = element.querySelector(".mark");
-            line.style.height = "170px";
-            line.style.width = "5px";
-            line.style.transition = "all 1s";
-            var info = element.querySelector(".info");
-            info.removeAttribute("hidden");
-            var grid = element.querySelector(".grid");
-            grid.classList.add("grid-active");
-            // set the contact format 
-            if (element == portfolio_13) {
-                contact.removeAttribute("hidden");
-                contactContent.forEach(function (c) {
-                    c.classList.remove('invisible');
-                });
-            }
-            else {
-                contact.setAttribute("hidden", "true");
-                contactContent.forEach(function (c) {
-                    c.classList.add('invisible');
-                });
-            }
+            expand(element);
         }, false);
     }
 }
@@ -90,22 +105,28 @@ function indexHoverOver(element) {
                 portfolio.style.gridTemplateColumns = "repeat(13, 12px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px)";
                 portfolio.style.transition = "all 1s";
             }
-            var line = element.querySelector(".mark");
-            line.style.height = "10px";
-            line.style.width = "10px";
-            line.style.transition = "all 0s";
-            var info = element.querySelector(".info");
-            info.setAttribute("hidden", "true");
-            line.style.transition = "all 0s";
-            contact.setAttribute("hidden", "true");
-            contactContent.forEach(function (c) {
-                c.classList.add('invisible');
-            });
-            var grid = element.querySelector(".grid");
-            grid.classList.remove("grid-active");
+            collapse(element);
         }, false);
     }
 }
+// click that Contact
+contactMenu.addEventListener("click", function () {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_04);
+    expand(portfolio_13);
+});
+//click that work
+workMenu.addEventListener("click", function () {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_13);
+    expand(portfolio_04);
+});
 function indexRefresh() {
     indexHover(portfolio_02);
     indexHoverOver(portfolio_02);
