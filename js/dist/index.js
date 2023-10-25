@@ -33,24 +33,27 @@ const portfolio_set = [
 ];
 function expand(element) {
     let line = element.querySelector(".mark");
-    line.style.height = "170px";
-    line.style.width = "5px";
-    line.style.transition = "all 1s";
     let info = element.querySelector(".info");
-    info.removeAttribute("hidden");
     let grid = element.querySelector(".grid");
-    grid.classList.add("grid-active");
+    if (line && info && grid) {
+        line.style.height = "170px";
+        line.style.width = "5px";
+        line.style.transition = "all 1s";
+        info.removeAttribute("hidden");
+        grid.classList.add("grid-active");
+    }
 }
 function collapse(element) {
     let line = element.querySelector(".mark");
-    line.style.height = "10px";
-    line.style.width = "10px";
-    line.style.transition = "all 0s";
     let info = element.querySelector(".info");
-    info.setAttribute("hidden", "true");
-    line.style.transition = "all 0s";
     let grid = element.querySelector(".grid");
-    grid.classList.remove("grid-active");
+    if (line && info && grid) {
+        line.style.height = "10px";
+        line.style.width = "10px";
+        line.style.transition = "all 0s";
+        info.setAttribute("hidden", "true");
+        grid.classList.remove("grid-active");
+    }
 }
 function collapseOthers(element) {
     portfolio_set.forEach((p) => {

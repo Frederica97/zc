@@ -269,9 +269,9 @@ b{
     padding: 3px 15px;
     border-radius: 5px;
     border: 1px solid #cccccc;
+    /* margin-top: 0px !important; */
 }
 .tag-div-right *{
-    margin: 0px !important;
     margin-left: 10px !important;
 }
 
