@@ -143,3 +143,8 @@ p{
     border: 1px solid black;
     margin-right: 15px;
 }
+
+.inline-link{
+    text-decoration: underline;
+    font-weight: 500;
+}

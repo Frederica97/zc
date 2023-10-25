@@ -88,9 +88,11 @@ function indexHover(element: HTMLElement) {
             if (element != portfolio_13){
                 collapse(portfolio_13)
             }
-            //collapse others
             if (element != portfolio_04){
                 collapse(portfolio_04)
+            }
+            if (element != portfolio_03){
+                collapse(portfolio_03)
             }
 
             for (let i = 1; i < portfolio_set.length; i++) {
@@ -130,8 +132,9 @@ contactMenu.addEventListener("click", () => {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
         portfolio.style.transition = "all 1s";
     }
-    collapse(portfolio_03)
     collapse(portfolio_04)
+    collapse(portfolio_03)
+    
     expand(portfolio_13)
 });
 
@@ -141,18 +144,20 @@ workMenu.addEventListener("click", () => {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
         portfolio.style.transition = "all 1s";
     }
-    collapse(portfolio_03)
     collapse(portfolio_13)
+    collapse(portfolio_03)
+
     expand(portfolio_04)
     
 });
 aboutMenu.addEventListener("click", () => {
     if (portfolio) {
-        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 600px 50px  50px 50px 50px 50px 50px 50px 50px 50px 50px )";
         portfolio.style.transition = "all 1s";
     }
     collapse(portfolio_13)
     collapse(portfolio_04)
+
     expand(portfolio_03)
     
 });
