@@ -1,5 +1,7 @@
 
 const workMenu : HTMLElement = <HTMLElement>document.getElementById("Menu-work");
+const aboutMenu : HTMLElement = <HTMLElement>document.getElementById("Menu-about");
+
 const contactMenu : HTMLElement = <HTMLElement>document.getElementById("Menu-contact");
 
 const portfolio_01: HTMLElement = <HTMLElement>document.getElementById("01");
@@ -128,6 +130,7 @@ contactMenu.addEventListener("click", () => {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
         portfolio.style.transition = "all 1s";
     }
+    collapse(portfolio_03)
     collapse(portfolio_04)
     expand(portfolio_13)
 });
@@ -138,8 +141,19 @@ workMenu.addEventListener("click", () => {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
         portfolio.style.transition = "all 1s";
     }
+    collapse(portfolio_03)
     collapse(portfolio_13)
     expand(portfolio_04)
+    
+});
+aboutMenu.addEventListener("click", () => {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_13)
+    collapse(portfolio_04)
+    expand(portfolio_03)
     
 });
 

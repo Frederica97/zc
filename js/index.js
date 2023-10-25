@@ -1,4 +1,5 @@
 var workMenu = document.getElementById("Menu-work");
+var aboutMenu = document.getElementById("Menu-about");
 var contactMenu = document.getElementById("Menu-contact");
 var portfolio_01 = document.getElementById("01");
 var portfolio_02 = document.getElementById("02");
@@ -115,6 +116,7 @@ contactMenu.addEventListener("click", function () {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
         portfolio.style.transition = "all 1s";
     }
+    collapse(portfolio_03);
     collapse(portfolio_04);
     expand(portfolio_13);
 });
@@ -124,8 +126,18 @@ workMenu.addEventListener("click", function () {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
         portfolio.style.transition = "all 1s";
     }
+    collapse(portfolio_03);
     collapse(portfolio_13);
     expand(portfolio_04);
+});
+aboutMenu.addEventListener("click", function () {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_13);
+    collapse(portfolio_04);
+    expand(portfolio_03);
 });
 function indexRefresh() {
     indexHover(portfolio_02);

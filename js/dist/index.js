@@ -1,5 +1,6 @@
 "use strict";
 const workMenu = document.getElementById("Menu-work");
+const aboutMenu = document.getElementById("Menu-about");
 const contactMenu = document.getElementById("Menu-contact");
 const portfolio_01 = document.getElementById("01");
 const portfolio_02 = document.getElementById("02");
@@ -33,27 +34,24 @@ const portfolio_set = [
 ];
 function expand(element) {
     let line = element.querySelector(".mark");
+    line.style.height = "170px";
+    line.style.width = "5px";
+    line.style.transition = "all 1s";
     let info = element.querySelector(".info");
+    info.removeAttribute("hidden");
     let grid = element.querySelector(".grid");
-    if (line && info && grid) {
-        line.style.height = "170px";
-        line.style.width = "5px";
-        line.style.transition = "all 1s";
-        info.removeAttribute("hidden");
-        grid.classList.add("grid-active");
-    }
+    grid.classList.add("grid-active");
 }
 function collapse(element) {
     let line = element.querySelector(".mark");
+    line.style.height = "10px";
+    line.style.width = "10px";
+    line.style.transition = "all 0s";
     let info = element.querySelector(".info");
+    info.setAttribute("hidden", "true");
+    line.style.transition = "all 0s";
     let grid = element.querySelector(".grid");
-    if (line && info && grid) {
-        line.style.height = "10px";
-        line.style.width = "10px";
-        line.style.transition = "all 0s";
-        info.setAttribute("hidden", "true");
-        grid.classList.remove("grid-active");
-    }
+    grid.classList.remove("grid-active");
 }
 function collapseOthers(element) {
     portfolio_set.forEach((p) => {
@@ -119,6 +117,7 @@ contactMenu.addEventListener("click", () => {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
         portfolio.style.transition = "all 1s";
     }
+    collapse(portfolio_03);
     collapse(portfolio_04);
     expand(portfolio_13);
 });
@@ -128,8 +127,18 @@ workMenu.addEventListener("click", () => {
         portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
         portfolio.style.transition = "all 1s";
     }
+    collapse(portfolio_03);
     collapse(portfolio_13);
     expand(portfolio_04);
+});
+aboutMenu.addEventListener("click", () => {
+    if (portfolio) {
+        portfolio.style.gridTemplateColumns = "repeat(13, 12px 50px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px )";
+        portfolio.style.transition = "all 1s";
+    }
+    collapse(portfolio_13);
+    collapse(portfolio_04);
+    expand(portfolio_03);
 });
 function indexRefresh() {
     indexHover(portfolio_02);
