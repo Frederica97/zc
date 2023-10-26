@@ -426,3 +426,15 @@ a{
 .circle-solid {
     background-color: gray; 
 }
+
+.subtitle{
+    font-size: 25px; 
+    font-weight: 600; 
+    margin-right:0px; 
+    text-align: right !important; 
+    padding-top:80px !important 
+}
+.image-circle-clip{
+    overflow: hidden; 
+    border-radius: 50%;
+}
