@@ -76,7 +76,6 @@ function indexHover(element) {
             if (element != portfolio_13) {
                 collapse(portfolio_13);
             }
-            //collapse others
             if (element != portfolio_04) {
                 collapse(portfolio_04);
             }

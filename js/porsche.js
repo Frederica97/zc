@@ -1,37 +1,44 @@
-"use strict";
 document.addEventListener('DOMContentLoaded', function () {
-    const option0 = document.getElementById("option0");
-    const option1 = document.getElementById("option1");
-    const option2 = document.getElementById("option2");
-    const option3 = document.getElementById("option3");
-    // const optionResult: HTMLImageElement = document.getElementById('option-result"') as HTMLImageElement;
-    const optionResult = document.getElementById('image');
-    console.log(optionResult);
-    var imageName = "";
+    var option0 = document.getElementById("option0");
+    var option1 = document.getElementById("option1");
+    var option2 = document.getElementById("option2");
+    var option3 = document.getElementById("option3");
+    var optionResult = document.getElementById('option-result');
+    var optionSet = [option1, option2, option3];
+    var defaultImageName = "../zc/img/porsche_22.png";
+    var imageName = defaultImageName;
     function hoverOption(element) {
-        console.log(element);
-        if (element) {
-            if (element == option1) {
-                imageName = "porsche_option1.png";
-            }
-            else if (element == option2) {
-                imageName = "porsche_option2.png";
-            }
-            else if (element == option3) {
-                imageName = "porsche_option3.png";
-            }
-            if (imageName) {
-                element.addEventListener('mouseover', () => {
-                    optionResult.src = "porsche_option3.png";
-                    element.getElementsByClassName("circle")[0].classList.add("circle-solid");
-                }, false);
-            }
-        }
+        optionSet.forEach(function (element) {
+            element.addEventListener('mouseover', function () {
+                if (element != option0) {
+                    optionSet.forEach(function (o, index) {
+                        if (element == o) {
+                            var i = index + 1;
+                            imageName = "../zc/img/porsche_option" + i + ".png";
+                        }
+                    });
+                }
+                optionResult.src = imageName;
+                console.log(element);
+                console.log(imageName);
+                element.getElementsByClassName("circle")[0].classList.add("circle-solid");
+                option0.getElementsByClassName("circle")[0].classList.remove("circle-solid");
+                element.style.transition = "all 500ms";
+            }, false);
+            element.addEventListener('mouseleave', function () {
+                optionResult.src = defaultImageName;
+                element.getElementsByClassName("circle")[0].classList.remove("circle-solid");
+                option0.getElementsByClassName("circle")[0].classList.add("circle-solid");
+                element.style.transition = "all 500ms";
+            }, false);
+        });
     }
     function refreshOption() {
+        console.log("trigger");
+        hoverOption(option0);
         hoverOption(option1);
-        hoverOption(option2);
         hoverOption(option3);
+        hoverOption(option2);
     }
     refreshOption();
 });
