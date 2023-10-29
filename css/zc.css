@@ -1,0 +1,106 @@
+#zc-chunk{
+    max-width: 700px;
+    margin: auto;
+    padding-top: 180px !important;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.dic-title,
+.expand-title{
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: "Roboto Slab";
+}
+
+.dic-subtitle,
+.expand-subtitle{
+    line-height: 1;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+}
+.dic-footnote,
+.expand-time{
+    line-height: 1.2;
+    font-size: 16px;
+    margin-top: 5px;
+    font-style: oblique;
+}
+.expand-time{
+    margin-top: 40px !important;
+
+}
+.dic-content,
+.expand-content{
+    line-height: 1.2;
+    font-size: 18px;
+}
+.dic-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px 0;
+}
+.dic-example{
+    line-height: 1.2;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-style: oblique;
+}
+.dic-word{
+    font-weight: 400;
+}
+
+.expand-col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0;
+    margin: 0 auto;
+}
+.expand-col-2 div{
+    padding-left: 30px;
+
+}
+
+
+
+.right-border{
+    border-right: 0.5px solid #303030;
+    padding-right: 30px;
+    text-align: right;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.expand-white{
+    padding-top: 400px;
+    margin-top:0;
+}
+
+.rotation{
+    transform: rotate(90deg);
+    text-align: center;
+    font-weight: 700;
+    padding-right: 35px;
+}
+.contact-icon{
+    width:25px;
+    height: 25px;
+    opacity: 25%;
+    margin:0 !important;
+    padding: 0;
+}
+.contact-icon:hover {
+    opacity: 50%;
+}
+.Container-icon{
+    display: grid;
+    grid-template-rows: 25px 25px 25px ;
+    gap: 15px;
+    margin-top:0;
+    padding-top:10px;
+}
+
