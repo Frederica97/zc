@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var option3 = document.getElementById("option3");
     var optionResult = document.getElementById('option-result');
     var optionSet = [option1, option2, option3];
-    var defaultImageName = "../zc/img/porsche_22.png";
+    var defaultImageName = "../zc/img/porsche_option00.png";
     var imageName = defaultImageName;
     function hoverOption(element) {
         optionSet.forEach(function (element) {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     optionSet.forEach(function (o, index) {
                         if (element == o) {
                             var i = index + 1;
-                            imageName = "../zc/img/porsche_option" + i + ".png";
+                            imageName = "../zc/img/porsche_option" + i + i+ ".png";
                         }
                     });
                 }

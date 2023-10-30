@@ -265,13 +265,13 @@ a{
     cursor:pointer;
 }
 
-.Container-banner{
+#Container-banner{
     background-color: #eeeeee70;
 }
-.Container-banner a:hover{
+#Container-banner a:hover{
     text-shadow:0.75px 0px 0px #444;
 }
-.Container-banner .disabled{
+#Container-banner .disabled{
     opacity: 0.5;
 }
 
