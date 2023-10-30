@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    transition: all 0.25s;
+    /* transition: all 0.25s; */
     color: #222;
     overflow-x: hidden;
 }
@@ -16,7 +16,7 @@ body {
     color: #888;  
 }
 
-.Container--Menu {
+.Container-Menu {
     width: 90%;
     margin: 0 auto;
     height: 2.7vh;
@@ -57,4 +57,45 @@ body {
     height: 3px;
     margin:auto;
     width: 100%;
+}
+
+#Container-splash {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh; /* Optional: Set the container's height to make it take up the entire viewport height */
+}
+
+
+#splash{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+}
+
+#splash-image{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    justify-content: cover;
+    top: 0;
+    left: 0;
+
+}
+#splash.fade{
+    opacity: 0;
+    transition: ease-in-out 500ms;
+}
+nav {
+    opacity: 1;
+}
+.page{
+    opacity: 0;
 }
