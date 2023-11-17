@@ -1,9 +1,9 @@
-# Zinan's portfolio https://frederica97.github.io/zc
+## Zinan's portfolio https://frederica97.github.io/zc
 
 ## about this website
-crafted from scratch__
-coded with passion__
-let me know what you think zinanchi@gsd.harvard.edu__
+crafted from scratch <br />
+coded with passion <br />
+let me know what you think zinanchi@gsd.harvard.edu <br />
 
 ## content
 **main** -- an overview about zinan in a album format. Know me step by step
