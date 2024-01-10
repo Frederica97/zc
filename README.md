@@ -13,3 +13,8 @@ let me know what you think zinanchi@gsd.harvard.edu <br />
 **about** -- you will read about my past experience and my education background in this section
 
 **contact** -- email and social media contacts
+
+## demo
+<video width="320" height="240" controls>
+  <source src="file/demo.mp4" type="video/mp4">
+</video>
