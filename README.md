@@ -18,3 +18,6 @@ let me know what you think zinanchi@gsd.harvard.edu <br />
 <video width="320" height="240" controls>
   <source src="file/demo.mp4" type="video/mp4">
 </video>
+
+![](file/demo.mp4)
+
