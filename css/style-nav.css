@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.Menu a {
+    color: #444;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    color: #888;
+}
+
+.Container-Menu {
+    width: 90%;
+    margin: 0 auto;
+    height: 2.7vh;
+}
+
+.Menu {
+    text-align: right;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    padding: 2vh;
+    top: 0;
+    background-color: #fff;
+}
+
+.Menu-item {
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.25s;
+    padding-left: 50px;
+}
+
+.Menu-item:hover {
+    opacity: 0.5;
+}
+
+.Menu-title {
+    font-weight: 700 !important;
+    font-family: "Arimo", sans-serif !important;
+    padding-left: 0px !important;
+    font-size: 28px;
+}
+
+.Container-flex {
+    display: flex;
+    z-index: 100;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Menu-mark {
+    height: 3px;
+    margin: auto;
+    width: 100%;
+}
+
+/* splash style */
+#splash {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: 25rem;
+}
+
+#splash-image {
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+    justify-content: cover;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "es6", // Set the target to ES6 or later
+      "lib": ["es6", "dom"], // Include ES6 and DOM libraries
+      "strict": true // Enable strict type checking (optional but recommended)
+    },
+    "include": ["**/*.ts", "about.js"] // Include TypeScript files in all subdirectories
+  }
