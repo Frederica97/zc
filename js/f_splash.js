@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             splashImage.style.transform = "rotate(45deg)";
             splashImage.style.transition = "all 700ms";
-f        }, 1300);
+        }, 1300);
         setTimeout(function () {
             splash.style.opacity = "0";
             splash.style.transition = "all 300ms ease-in";
