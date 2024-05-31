@@ -101,9 +101,9 @@ HoverGallery();
 // window size change
 window.addEventListener("resize", setHeight);
 
-// setTimeout(function () {
-//     setHeight();
-// }, 2300);
+setTimeout(function () {
+    setHeight();
+}, 2300);
 
 // scroll
 let lastScrollTop = 0;
