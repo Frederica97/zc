@@ -25,12 +25,10 @@ function setHeight() {
     for (let i = 0; i < galleries.length; i++) {
         const onDisplay = galleries[i].querySelector(".gallery-display");
         const displayWidth = onDisplay.offsetWidth;
-        console.log(onDisplay);
         const style = window.getComputedStyle(onDisplay);
         const imageUrl = style.backgroundImage
             .slice(4, -1)
             .replace(/["']/g, "");
-        console.log(imageUrl);
         const img = new Image();
         img.src = imageUrl;
         img.onload = function () {
