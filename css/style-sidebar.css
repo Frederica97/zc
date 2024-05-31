@@ -25,7 +25,7 @@
 }
 
 .dot.active {
-    background-color: rgb(136, 124, 111) !important; /* Change this color to your desired active color */
+    background-color: rgb(128, 128, 128) !important; /* Change this color to your desired active color */
     box-shadow:0.75px 0px 0px rgb(136, 124, 111) ;
 }
 

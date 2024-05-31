@@ -33,9 +33,9 @@
         />
     </head>
     <body>
-        <!-- <div id="splash">
+        <div id="splash">
             <img id="splash-image" src="img/splash_screen_2.png" alt="" />
-        </div> -->
+        </div>
 
         <nav class="Menu" id="Menu-home" style="display: block">
             <div class="Container-Menu">
@@ -193,7 +193,7 @@
                         </div>
                     </section>
 
-                    <section id="section2">
+                    <div>
                         <div
                             class="box-right"
                             style="background: #f3f3f3"
@@ -263,18 +263,14 @@
                             </div>
                         </div>
                         <div class="box-left" style="background: #f3f3f3"></div>
-                    </section>
-                    <!-- <div class="Container-image"><img src="img/mw_011.png" alt></div> -->
-                    <div
+                    </div>
+                    <section
+                        id="section2"
                         class="Container-full background-image-wrap"
                         style="background-image: url('img/mw_011_1.png')"
-                    ></div>
+                    ></section>
 
-                    <section
-                        id="section3"
-                        class="Container-cluster"
-                        style="padding-top: 0px"
-                    >
+                    <div class="Container-cluster" style="padding-top: 0px">
                         <h5
                             class="section"
                             style="border-left: 1.4rem solid #3b7e94"
@@ -310,32 +306,6 @@
                                 information, provide valuable data insights, and
                                 drive user engagement</b
                             >.
-
-                            <!-- Morrow leverages its B2B2C model to deliver
-                            financial services to American workers, both
-                            synchronously through coaching sessions and
-                            asynchronously follow-ups. The Scorecard is a core
-                            feature designed to evaluate financial status,
-                            identify opportunities, and provide a step-by-step
-                            actionable plan. It functions as a to-do list, a
-                            progress tracker, and an educational platform,
-                            empowering users to take control of their financial
-                            health.. Currently, the solution pipeline spans
-                            multiple platforms, complicating management for the
-                            coaching team and increasing the learning curve as
-                            the team grows. During the member activation stage,
-                            user information is collected via Typeform,
-                            processed, and stored in Salesforce and Google
-                            Sheets. The Scorecard is then generated as a PDF
-                            using Docs and delivered via email. Though it is
-                            time-consuming, this multi-step process proves the
-                            concept and the business model. To streamline this
-                            process, the product team is integrating the
-                            Scorecard feature into the Morrow Platform. This
-                            integration aims to make the Scorecard experience
-                            more enjoyable and interactive, enhance coach
-                            efficiency, centralize member information, provide
-                            data insights, and increase user engagement. -->
                         </p>
                         <div
                             id="Container-phase"
@@ -358,9 +328,9 @@
                                 </h3>
                             </div>
                         </div>
-                    </section>
+                    </div>
 
-                    <section id="section2">
+                    <section id="section3">
                         <div
                             class="box-right"
                             style="background: #f3f3f3"
@@ -403,19 +373,17 @@
                                     process.
 
                                     <br /><br />
-
-                                 
-                                    Broadly, we proposed some
+                                    Firstly, we proposed some
                                     <b> Must Have</b> and
                                     <b>Nice to Have</b> features. After a
                                     product team workshop, we agreed on the
                                     sub-features for the Dynamic Scorecard. To
                                     align expectations further, the
-                                    <b>Out-of-Scopes</b> include: coach cross-review,
-                                    comparisons & trends, more asynchronous
-                                    communication options from Members to
-                                    Coaches (status, messaging), and additional
-                                    outputs (print, save to PDF).
+                                    <b>Out-of-Scopes</b> include: coach
+                                    cross-review, comparisons & trends, more
+                                    asynchronous communication options (status,
+                                    messaging), and additional outputs (print,
+                                    save to PDF).
                                 </p>
 
                                 <div class="Container-3">
@@ -443,30 +411,37 @@
                         <div class="box-left" style="background: #f3f3f3"></div>
                     </section>
 
-                    <section id="section5" class="Container-cluster">
+                    <section id="section4" class="Container-cluster">
                         <h5
                             class="section"
-                            style="border-left: 1.4rem solid #c2c2e0"
+                            style="border-left: 1.4rem solid #3b7e94"
                         >
-                            Dynamo Node Design
+                            Design
                         </h5>
                         <h3 class="content-title">
-                            Dynamic Scorecard Sub-Features and Out-of-Scope
+                            High Fidelity Deisgn and Interactive Prototype
                         </h3>
                         <p class="content-text">
-                            Through coach interview and user research, we
-                            understand the current solution. The product aims to
-                            achieve equal or larger than the current solution.
-                            Morrow leverages its B2B2C model to deliver
-                            financial services to American workers, both
-                            synchronously through coaching sessions and
-                            asynchronously follow-ups. The Scorecard is a core
-                            feature designed to evaluate financial status,
-                            identify opportunities, and provide a step-by-step
-                            actionable plan. It functions as a to-do list, a
-                            progress tracker, and an educational platform,
-                            empowering users to take control of their financial
-                            health..
+                            Some anchoring components in the Dynamic Scorecard
+                            include the <b>scorecard</b>, <b>action plan</b>,
+                            and <b>history record</b>. The High Fidelity Design
+                            illustrates how these components visually relate to
+                            one another and establishes
+                            <b>a clear information hierarchy</b>. The Action
+                            Plan is designed to create the most engagement with
+                            the user, allowing them to mark as complete and
+                            leave comments for the coach to facilitate
+                            personalization. The visual design sets the action
+                            plan apart, while multiple components are unified
+                            with a cohesive <b>design system</b>. <br /><br />
+
+                            Logically, other features work in the background,
+                            including <b>financial data gathering</b>,
+                            <b>auto-generation</b> of the initial scorecard, and
+                            <b>manual editing</b> of the scorecard. These
+                            elements are best showcased through interactions.
+                            The Interactive Prototype demonstrates how members
+                            and coaches will engage with these features. <br />
                         </p>
                         <div class="Container-2-left" style="margin: auto">
                             <video autoplay loop muted width="100%">
@@ -478,11 +453,11 @@
                             <div>
                                 <p class="content-annotation">
                                     <b>Scorecard Edit</b><br />
-                                    Coach can edit score and opportunity in the
-                                    dynamic scorecard. Autofilled opportunities
-                                    automate their process. Dropdown menu
-                                    enables editing and coach can double click
-                                    into opportunity edits.
+                                    Coaches can edit scores and opportunities in
+                                    the dynamic Scorecard. Autofilled
+                                    opportunities streamline the process, while
+                                    a dropdown menu enables editing. Coaches can
+                                    also double-click to make opportunity edits.
                                 </p>
                             </div>
                         </div>
@@ -496,8 +471,8 @@
                             <div>
                                 <p class="content-annotation">
                                     <b>Scorecard Collapse</b><br />
-                                    Complete Scorecard is collapsed as a reveal
-                                    of success.
+                                    The complete Scorecard is collapsed to
+                                    reveal success.
                                 </p>
                             </div>
                         </div>
@@ -511,11 +486,11 @@
                             <div>
                                 <p class="content-annotation">
                                     <b>Action Plan Interaction</b><br />
-                                    Coachs customize an action plan for Morrow
-                                    Members. Members complete an action item and
-                                    leave a message for the coaches. It's
-                                    dynamic and coach can read and respond to
-                                    member messages simultaneously.
+                                    Coaches customize action plans for Morrow
+                                    members. Members can complete action items
+                                    and leave messages for their coaches. The
+                                    interaction is dynamic, allowing coaches to
+                                    get members' update simultaneously.
                                 </p>
                             </div>
                         </div>
@@ -531,17 +506,18 @@
                             <div>
                                 <p class="content-annotation">
                                     <!-- <p class="content-text" style="font-size: 16px"> -->
-                                    <b>History Record</b><br />
-                                    We want to see your growth and celebrate it.
-                                    With selection of date, members can see
-                                    different versions of scorecard in place,
-                                    tracking their improvement record.
+                                    <b>History Record Switch</b><br />
+                                    We want Morrow Members to see their growth
+                                    and celebrate it. By selecting a date,
+                                    members can view different versions of their
+                                    scorecard, tracking their improvement over
+                                    time.
                                 </p>
                             </div>
                         </div>
                     </section>
 
-                    <section id="section4">
+                    <section id="section5">
                         <div
                             class="box-right"
                             style="background: #f3f3f3"
@@ -571,10 +547,10 @@
                         <div class="box-left" style="background: #f3f3f3"></div>
                     </section>
 
-                    <section id="section5" class="Container-cluster">
+                    <div class="Container-cluster">
                         <h5
                             class="section"
-                            style="border-left: 1.4rem solid #c2c2e0"
+                            style="border-left: 1.4rem solid #3b7e94"
                         >
                             Responsive Design
                         </h5>
@@ -582,19 +558,16 @@
                             Mobile Prototype -- Reuse Desktop Components
                         </h3>
                         <p class="content-text">
-                            Through coach interview and user research, we
-                            understand the current solution. The product aims to
-                            achieve equal or larger than the current solution.
-                            Morrow leverages its B2B2C model to deliver
-                            financial services to American workers, both
-                            synchronously through coaching sessions and
-                            asynchronously follow-ups. The Scorecard is a core
-                            feature designed to evaluate financial status,
-                            identify opportunities, and provide a step-by-step
-                            actionable plan. It functions as a to-do list, a
-                            progress tracker, and an educational platform,
-                            empowering users to take control of their financial
-                            health..
+                            According to insights from coach calls,
+                            <b>60%</b> Morrow Members use <b>mobile devices</b>.
+                            Therefore, Dynamic Scorecard Mobile Design is
+                            crucial for member outreach. To leverage familiarity
+                            and development benefits, we
+                            <b>reuse desktop components</b> by reorganizing
+                            their <b>stack</b> and <b>proportions</b>. Certain
+                            elements, like summary icon in front of each
+                            scorecard level, are specifically designed to
+                            enhance mobile usability.
                         </p>
 
                         <div
@@ -647,44 +620,43 @@
                             </div>
                             <div class="Container-galleries-text">
                                 <p class="content-text">
-                                    <b>Financial Scorecard </b> &mdash;&mdash;
-                                    For mobile, horizontally orientated deskstop
-                                    elements are horizontally stacked. Using
-                                    pattched icon before the level indicator as
-                                    a summary for the scorecard. Traffic light
+                                    <b>Financial Scorecard </b> &mdash;
+                                    Horizontally oriented desktop elements are
+                                    vertically stacked for mobile devices. Icons
+                                    are used before the level indicator to
+                                    summarize the scorecard. Traffic light
                                     indicators are aligned on the right as a
-                                    visual anchor for smaller device.
+                                    visual anchor for smaller devices.
                                 </p>
                                 <p class="content-text" hidden>
-                                    <b>Action Plan </b> &mdash;&mdash; For
-                                    mobile, horizontally orientated deskstop
-                                    elements are horizontally stacked. Using
-                                    pattched icon before the level indicator as
-                                    a summary for the scorecard. Traffic light
-                                    indicators are aligned on the right as a
-                                    visual anchor for smaller device.
+                                    <b>Action Plan </b> &mdash; Each action plan
+                                    item on mobile nests in its own block,
+                                    allowing users to focus on one item at a
+                                    time, complete it, and then move on to the
+                                    next. Complete buttons are positioned on the
+                                    left, ensuring easy access for users even
+                                    when holding the phone with one hand.
                                 </p>
                                 <p class="content-text" hidden>
-                                    <b>Complete Items</b> &mdash;&mdash; For
-                                    mobile, horizontally orientated deskstop
-                                    elements are horizontally stacked. Using
-                                    pattched icon before the level indicator as
-                                    a summary for the scorecard. Traffic light
-                                    indicators are aligned on the right as a
-                                    visual anchor for smaller device.
+                                    <b>Complete Items</b> &mdash; On mobile
+                                    devices, the scorecard level collapse
+                                    feature is enabled for each level,
+                                    regardless of completeness. This serves as a
+                                    control to create additional space for the
+                                    current focus.
                                 </p>
                                 <p class="content-text" hidden>
-                                    <b>History Record</b> &mdash;&mdash; For
-                                    mobile, horizontally orientated deskstop
-                                    elements are horizontally stacked. Using
-                                    pattched icon before the level indicator as
-                                    a summary for the scorecard. Traffic light
-                                    indicators are aligned on the right as a
-                                    visual anchor for smaller device.
+                                    <b>History Record</b> &mdash; On mobile
+                                    devices, the scorecard version selection is
+                                    positioned horizontally with an overflow,
+                                    conserving space for the scorecard content.
+                                    It remains fixed at the top, allowing for
+                                    easy selection of different records at any
+                                    time.
                                 </p>
                             </div>
                         </div>
-                    </section>
+                    </div>
 
                     <section
                         class="Container-cluster Container-grid"
@@ -695,110 +667,79 @@
                                 class="section"
                                 style="border-left: 1.4rem solid #3b7e94"
                             >
-                                Thoughts
+                                Thoughs
                             </h5>
+
                             <h3 class="content-title">
                                 End-to-End Product Cycle
                             </h3>
-                            <p
-                                class="content-text"
-                                style="
-                                    font-size: 25px;
-                                    font-weight: 600;
-                                    margin-right: 0px;
-                                    text-align: right !important;
-                                "
-                            >
+                            <p class="content-subtitle">
                                 Synthesize Information and Define Scope
                             </p>
+
                             <p class="content-text">
-                                A start-up environment is characterized by a
-                                fast-paced, highly dynamic working atmosphere
-                                that demands both individual initiative and
-                                independent work. For Dynamic Scorecard, I
-                                conducted interviews with Morrow Business
-                                Operations, Member Engagement, and multiple
-                                Coaches to understand their current stage,
+                                In a startup environment, the pace is fast, and
+                                the atmosphere highly dynamic, requiring
+                                individual initiative and independent work. For
+                                Dynamic Scorecard, I conducted interviews with
+                                Morrow's <b>Business Operations</b>,
+                                <b>Member Engagement teams</b>, and multiple
+                                <b>Coaches</b> to grasp their current stage,
                                 synthesize information, and find solutions to
-                                maximize the collective win. It transforms a
-                                proven business model into a streamlined product
-                                designed to optimize and concentrate user flow.
-                                Through writing the Product Requirement
-                                Document, we break some assumptions like the
-                                Through conversation, it breaks assumptions like
-                                integrat salesforce data into the platform data
-                                Here are some surprising nice to have?
+                                maximize collective success. This process
+                                transforms the proven business model into a
+                                streamlined product, optimizing and
+                                concentrating user flow. Writing the Product
+                                Requirement Document involved challenging
+                                assumptions and making decisions accordingly.
                             </p>
 
-                            <p
-                                class="content-text"
-                                style="
-                                    font-size: 25px;
-                                    font-weight: 600;
-                                    margin-right: 0px;
-                                    text-align: right !important;
-                                "
-                            >
-                                Highly collaborative with Engineer Lead
+                            <p class="content-subtitle">
+                                Highly Collaborative with Users
                             </p>
+
                             <p class="content-text">
-                                <b> Dynamo's user community</b> wins it in the
-                                competitive landscape. Community memebers share
-                                their insights and collectively troubleshoot
-                                issues in a creative design field. This robust
-                                and supportive knowledge-based community
-                                significantly simplifies people's lives by
-                                facilitating a more seamless utilization of this
-                                automation tool. What's more important, the
-                                Dynamo Team plays an important role in
-                                supporting the community, including
-                                <b
-                                    >engaging with users on forum and linkedin
-                                    group, host bi-weekly Spirint Demos, and
-                                    open to receive feedback from the user
-                                    directly.</b
-                                >
-                                This experience has inspired me to become a
-                                dedicated advocate within my community, working
-                                relentlessly to advance the forefront of
-                                technology within the design industry.
+                                An essential user group, the coach, is highly
+                                engaged in product development. We consistently
+                                seek opinions and feedback from coach
+                                representatives to ensure
+                                <b>alignment between product and user needs</b>.
+                                This method minimizes the learning curve for
+                                coaches using and improves 40% in their working
+                                efficiency once proficient.
                             </p>
                         </div>
                     </section>
                 </div>
-                <div class="Container-cluster"></div>
+                <!-- <div class="Container-cluster"></div> -->
 
                 <div class="Container-cluster Container-col-2-end">
-                    <a id="Container-prev" href="lotus.html">
-                        <img class="image-80" src="img/04.jpg" />
-                        <div class="prev">PREV</div>
-                        <div class="foot-text">lotus app</div>
-                        <div class="tag-div">
-                            <h5>startup</h5>
-                            <h5>UIUX</h5>
-                            <h5>iOS dev</h5>
-                        </div>
-                    </a>
-                    <a id="Container-next" href="porsche.html">
+                    <a id="Container-prev" href="porsche.html">
                         <img class="image-80" src="img/06.jpg" />
-                        <div class="next">NEXT</div>
+                        <div class="prev">PREV</div>
                         <div class="foot-text">porsche retail experience</div>
-                        <div class="tag-div-right">
+                        <div class="tag-div">
                             <h5>Experience</h5>
                             <h5>Brand</h5>
                             <h5>Interior</h5>
                         </div>
                     </a>
+                    <a id="Container-next" href="lotus.html">
+                        <img class="image-80" src="img/04.jpg" />
+                        <div class="next">NEXT</div>
+                        <div class="foot-text">lotus app</div>
+                        <div class="tag-div-right">
+                            <h5>startup</h5>
+                            <h5>UIUX</h5>
+                            <h5>iOS dev</h5>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="Container-full" id="Container-banner">
+                <!-- <div class="Container-full" id="Container-banner">
                     <div
                         class="Container-cluster"
-                        style="
-                            width: 80%;
-                            margin: 0px auto !important;
-                            padding: 0px;
-                        "
+                        style="margin: 0px auto !important; padding: 0px"
                     >
                         <a href="index.html">
                             <img
@@ -809,97 +750,41 @@
                             />
                             <h3 class="foot-text">ZINAN</h3>
                         </a>
-                        <div
-                            class="Container-col-4"
-                            style="margin: 40px auto !important"
-                        >
-                            <div>
-                                <h3 class="foot-text">work</h3>
-                                <div class="des-text">
-                                    <a href="lotus.html">Lotus App [StartUp]</a>
-                                </div>
-                                <div class="des-text">
-                                    <a href="autodesk.html">Dynamo, Autodesk</a>
-                                </div>
-                                <div class="des-text">
-                                    <a href="porsche.html"
-                                        >Porsche Retail Experience</a
-                                    >
-                                </div>
-                                <div class="des-text disabled">Envis</div>
-                                <div class="des-text disabled">Agrimove</div>
-                            </div>
-                            <div>
-                                <h3 class="foot-text">project</h3>
-                                <div class="des-text disabled">Crossroads</div>
-                                <div class="des-text disabled">
-                                    Multiple Grounds
-                                </div>
-                                <div class="des-text disabled">
-                                    Tessuto Studio
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="foot-text">about</h3>
-                                <div class="des-text">
-                                    <a href="zc.html#zc-chunk">Personal</a>
-                                </div>
-                                <div class="des-text">
-                                    <a href="zc.html#zc-experience"
-                                        >Professional</a
-                                    >
-                                </div>
-                                <div class="des-text">
-                                    <a
-                                        href="file/ZinanChi_resume_web.pdf"
-                                        target="_blank"
-                                        >Resume</a
-                                    >
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="foot-text">contact</h3>
-                                <div class="des-text">
-                                    <a href="mailto:chizinan97@gmail.com"
-                                        >Email</a
-                                    >
-                                </div>
-                                <div class="Container-icon">
-                                    <a
-                                        href="https://www.linkedin.com/in/zinan-c/"
-                                        target="_blank"
-                                        ><img
-                                            class="contact-icon"
-                                            src="img/linkedin.png"
-                                            alt
-                                    /></a>
-                                    <a
-                                        href="https://github.com/Frederica97"
-                                        target="_blank"
-                                        ><img
-                                            class="contact-icon"
-                                            src="img/github.png"
-                                            alt
-                                    /></a>
-                                    <a
-                                        href="https://www.instagram.com/zinanchi97/"
-                                        target="_blank"
-                                        ><img
-                                            class="contact-icon"
-                                            src="img/instagram.png"
-                                            alt
-                                    /></a>
-                                </div>
-                            </div>
+                        <div class="content-text">
+                            <p>
+                                © 2024 Zinan Chi. &nbsp; All rights reserved.
+                                For further information, contact
+                                zinanchi@gsd.harvard.edu.
+                            </p>
                         </div>
-                        <br /><br />
-                        <div class="des-text">
-                            © 2023 Zinan Chi. &nbsp; All rights reserved.
-                            &nbsp;| &nbsp;For further information, contact
-                            zinanchi@gsd.harvard.edu.
+                        <div>
+                            <a
+                                href="https://www.linkedin.com/in/zinan-c/"
+                                target="_blank"
+                                ><img
+                                    class="contact-icon"
+                                    src="img/linkedin.png"
+                                    alt
+                            /></a>
+                            <a
+                                href="https://github.com/Frederica97"
+                                target="_blank"
+                                ><img
+                                    class="contact-icon"
+                                    src="img/github.png"
+                                    alt
+                            /></a>
+                            <a
+                                href="https://www.instagram.com/zinanchi97/"
+                                target="_blank"
+                                ><img
+                                    class="contact-icon"
+                                    src="img/instagram.png"
+                                    alt
+                            /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -56,6 +56,8 @@ body {
     line-height: 2;
     font-size: 1.7rem;
     margin-top: 2.4rem;
+    letter-spacing: 0.05rem;
+
 }
 
 .content-annotation {
@@ -352,20 +354,20 @@ b {
 }
 
 .next {
-    border-right: 17px solid #d1d1d1;
-    padding-right: 17px;
-    font-size: 14px;
-    font-weight: 700;
+    border-right: 1.4rem solid #bbbbbb;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     letter-spacing: 0.4em;
     text-transform: uppercase;
     align-items: right !important;
 }
 
 .prev {
-    border-left: 17px solid #d1d1d1;
-    padding-left: 17px;
-    font-size: 14px;
-    font-weight: 700;
+    border-left: 1.4rem solid #bbbbbb;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     letter-spacing: 0.4em;
     text-transform: uppercase;
     align-content: right !important;
@@ -374,7 +376,7 @@ b {
 .foot-text {
     margin-top: 10px;
     margin-bottom: 20px !important;
-    font-size: 20px;
+    font-size: 1.6rem;
     line-height: 1.5;
     font-family: "Arimo";
     font-weight: 700;
@@ -385,9 +387,10 @@ b {
 .tag-div *,
 .tag-div-right * {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.2rem;
     color: #aaaaaa;
     margin-right: 10px;
+    margin-top:1.8rem;
     padding: 3px 15px;
     border-radius: 5px;
     border: 1px solid #cccccc;
@@ -434,7 +437,7 @@ a {
 }
 
 #Container-banner {
-    background-color: #eeeeee70;
+    background-color: #eeeeee4e;
 }
 
 #Container-banner a:hover {
