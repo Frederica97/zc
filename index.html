@@ -13,7 +13,9 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     </head>
     <body>
-        <div id="splash"><img id="splash-image" src = "img/splash_screen_2.png" alt=""></div>
+        <div id="splash">
+            <img id="splash-image" src="img/splash_screen_2.png" alt="" />
+        </div>
 
         <nav class="Menu " id="Menu-home">
             <div class="Container-Menu">
@@ -39,7 +41,7 @@
                 </div>
             </div>
         </nav>
-        <div class="page" id="page">
+        <main class="page" id="main-content">
             <div id="portfolio">
                 <a id="01" href="#"><div class="portfolio-image-wrap" style="background-image: url('img/00.jpg')"></div></a>
                 <a id="02" href="#">
@@ -266,9 +268,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <script src = "js/index.js" type="text/javascript"></script>
-        <script src = "js/nav.js" type="text/javascript"></script>
-        <script src = "js/window.js" type="text/javascript"></script>
+        </main>
+        <script src = "js/index.js" defer type="text/javascript"></script>
+        <!-- <script src = "js/nav.js" type="text/javascript"></script> -->
+        <script src = "js/f_splash.js" defer type="text/javascript"></script>
+        <script src = "js/window.js" defer type="text/javascript"></script>
     </body>
 </html>

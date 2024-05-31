@@ -33,13 +33,16 @@ var portfolio_set = [
 ];
 function expand(element) {
     var line = element.querySelector(".mark");
-    line.style.height = "170px";
-    line.style.width = "5px";
-    line.style.transition = "all 1s";
-    var info = element.querySelector(".info");
-    info.removeAttribute("hidden");
-    var grid = element.querySelector(".grid");
-    grid.classList.add("grid-active");
+    if (line){
+        line.style.height = "170px";
+        line.style.width = "5px";
+        line.style.transition = "all 1s";
+        var info = element.querySelector(".info");
+        info.removeAttribute("hidden");
+        var grid = element.querySelector(".grid");
+        grid.classList.add("grid-active");
+    }
+
 }
 function collapse(element) {
     var line = element.querySelector(".mark");
