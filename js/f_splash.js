@@ -8,11 +8,11 @@ window.addEventListener("DOMContentLoaded", function () {
         // init
         if (nav) {
             nav.style.opacity = "0";
-            nav.style.display = "none";
+            // nav.style.display = "none";
         }
         if (main) {
             main.style.opacity = "0";
-            main.style.display = "none";
+            // main.style.display = "none";
         }
 
         // rotation
