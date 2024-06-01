@@ -17,23 +17,7 @@ body {
     color: #222;
     overflow-x: hidden;
     font-size: 18px;
-
 }
-
-.Container-full {
-    width: 100%;
-    padding: 80px 0;
-}
-
-.Container-cluster {
-    position: relative;
-    width: 55%;
-    margin: 0 auto;
-    /* max-width: 1100px; */
-    padding: 80px 0;
-}
-
-
 
 .content-title {
     font-weight: 700;
@@ -648,3 +632,34 @@ a {
 .gallery-display {
     box-shadow: 0 0 0 #fff !important;
 }
+
+@media (max-width: 1200px) {
+    .col-4 { flex: 0 0 33.33%; }
+    .col-8 { flex: 0 0 66.66%; }
+}
+
+@media (max-width: 992px) {
+    .col-6 { flex: 0 0 50%; }
+    .col-12 { flex: 0 0 100%; }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 62.5%;
+    
+        body {
+            margin: 0;
+            font-size: 10rem;
+        }
+    }
+   
+}
+/* 
+:root {
+    font-size: 62.5%;
+
+    body {
+        margin: 0;
+        font-size: 2rem;
+    }
+} */

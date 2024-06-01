@@ -13,6 +13,7 @@ function addLink() {
         }
     }
 }
+
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (rect.top <= window.innerHeight && rect.bottom >= 0 &&
@@ -40,8 +41,18 @@ function updateSideBar() {
 window.addEventListener('scroll', () => {
     updateSideBar();
 });
+
+// coordinate with splash disappear time
+window.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        updateSideBar();
+    }, 2100);
+});
+
 addLink();
 updateSideBar();
+
+
 const next = document.getElementById("Container-next");
 const prev = document.getElementById("Container-prev");
 function hoverPrev(element) {
