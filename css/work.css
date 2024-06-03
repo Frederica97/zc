@@ -184,13 +184,14 @@ p {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     #work-gallery {
         grid-template-columns: 450px;
         row-gap: 60px;
         width: 100%;
         justify-content: center;
         display: grid;
+        zoom: 125%;
     }
 
     .gallery-canvas {

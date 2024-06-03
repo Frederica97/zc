@@ -64,3 +64,15 @@ body {
     font-size: 1.6rem;
     margin-top: 0rem;
 }
+
+@media (max-width: 1023px) {
+    body{
+        zoom: 80%;
+    }
+}
+
+@media (min-width: 1500px) {
+    body{
+        zoom: 150%;
+    }
+}
