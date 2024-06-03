@@ -184,7 +184,7 @@ p {
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     #work-gallery {
         grid-template-columns: 450px;
         row-gap: 60px;

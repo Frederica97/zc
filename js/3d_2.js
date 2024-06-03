@@ -1,48 +1,93 @@
-// Import Three.js (if you're using modules, otherwise include it via CDN as above)
-// import * as THREE from 'three';
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js";
+import {OrbitControls} from "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js";
+import {OBJLoader} from "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/loaders/OBJLoader.js";
 
-// Set up the scene, camera, and renderer
+const w = window.innerWidth;
+const h = window.innerHeight;
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+scene.background = new THREE.Color(0xffffff);
+
+const camera = new THREE.PerspectiveCamera(25, w / h, 0.1, 1000);
+camera.position.z = 5;
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(w, h);
 document.body.appendChild(renderer.domElement);
 
-// Create a geometry and material, then combine them into a mesh
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(geometry, material);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.update();
 
+function init(geometry) {
+  const material = new THREE.MeshMatcapMaterial({
+    matcap: new THREE.TextureLoader().load("./file/black-n-shiney.jpg")
+  });
 
+  const floorMaterial = new THREE.MeshStandardMaterial({
+    color: "#777777",
+    metalness: 0.2,
+    roughness: 0.6,
+    envMapIntensity: 0.5,
+    side: THREE.DoubleSide
+    // map: map,
+  });
 
-// MD_BOX.obj
+  const mesh = new THREE.Mesh(geometry, material);
+  scene.add(mesh);
 
+  var spotLight = new THREE.SpotLight(new THREE.Color("white"), 1.5);
+  spotLight.position.set(5, 100, 0);
+  spotLight.castShadow = true;
+  scene.add(spotLight);
 
-// Add the mesh to the scene
-scene.add(cube);
+  var sphereLight = new THREE.SphereGeometry(50);
+  var sphereLightMaterial = new THREE.MeshBasicMaterial({
+    color: new THREE.Color("white")
+  });
 
-// Position the camera so the cube is visible
-camera.position.z = 5;
+  // const sunlight = new THREE.DirectionalLight(0xffffff);
+  // sunlight.position.y = 2;
+  // scene.add(sunlight);
 
-// Create an animation loop
-function animate() {
+  // const filllight = new THREE.DirectionalLight(0x88ccff);
+  // filllight.position.x = 1;
+  // filllight.position.y = -2;
+  // scene.add(filllight);
+
+  // THREE.ImageUtils.crossOrigin = '';
+  // var floorMap = THREE.ImageUtils.loadTexture("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG76Ug6KATmlUnoLoZV8xJFLK2zGo3Jvw7xqyFSd3iBUue7PZ3");
+  // floorMap.wrapS = floorMap.wrapT = THREE.RepeatWrapping;
+  // floorMap.repeat.set(50, 50);
+
+  // var groundMaterial = new THREE.MeshPhongMaterial({
+  //   color: new THREE.Color('#111'),
+  //   specular: new THREE.Color('#808000'),
+  //   //specular: new THREE.Color('#333'),
+  //   shininess: 0,
+  //   bumpMap: floorMap
+  // });
+  // var groundGeo = new THREE.PlaneGeometry(200, 200);
+  // var ground = new THREE.Mesh(groundGeo, groundMaterial);
+
+  // ground.position.set(0, 0, 0);
+  // ground.rotation.x = (-Math.PI / 2);
+  // ground.receiveShadow = true;
+  // scene.add(ground);
+
+  function animate() {
     requestAnimationFrame(animate);
-
-    // Rotate the cube for some basic animation
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-
     renderer.render(scene, camera);
+  }
+  animate();
 }
 
-// Handle window resizing
-window.addEventListener('resize', () => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    renderer.setSize(width, height);
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
+const loader = new OBJLoader();
+loader.load("./file/floating_01.obj", (obj) => {
+  console.log(obj);
+  init(obj.children[0].geometry);
 });
 
-// Start the animation loop
-animate();
+function handleWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+window.addEventListener("resize", handleWindowResize, false);
