@@ -65,7 +65,7 @@ body {
     margin-top: 0rem;
 }
 
-@media (min-width: 2401px) {
+/* @media (min-width: 2401px) {
     body{
         zoom: 150%;
     }
@@ -85,5 +85,5 @@ body {
     body{
         zoom: 90%;
     }
-}
+} */
 
