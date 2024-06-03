@@ -184,9 +184,9 @@ p {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1170px) {
     #zc-chunk{
-        zoom: 125%;
+        zoom: 200%;
 
     }
     #work-gallery {
@@ -195,7 +195,7 @@ p {
         width: 100%;
         justify-content: center;
         display: grid;
-        zoom: 150%;
+        zoom: 200%;
     }
 
     .gallery-canvas {
