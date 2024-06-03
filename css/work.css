@@ -185,13 +185,17 @@ p {
 
 
 @media (max-width: 900px) {
+    #zc-chunk{
+        zoom: 125%;
+
+    }
     #work-gallery {
         grid-template-columns: 450px;
         row-gap: 60px;
         width: 100%;
         justify-content: center;
         display: grid;
-        zoom: 125%;
+        zoom: 150%;
     }
 
     .gallery-canvas {
