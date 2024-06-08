@@ -158,25 +158,22 @@ body {
 
 
 
-/* @media (min-width: 2401px) {
-    body{
-        zoom: 150%;
+@media (min-width: 2000px) {
+    :root {
+        font-size: 75%;
     }
-}
-@media (max-width: 2300px) {
-    body{
-        zoom: 125%;
+
+    body {
+        font-size: 2rem;
     }
 }
 
-@media (max-width: 1900px) {
-    body{
-        zoom: 100%;
+@media (min-width: 2300px) {
+    :root {
+        font-size: 90%;
+    }
+
+    body {
+        font-size: 2rem;
     }
 }
-@media (max-width: 1300px) {
-    body{
-        zoom: 90%;
-    }
-} */
-

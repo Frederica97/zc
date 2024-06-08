@@ -1,24 +1,41 @@
-.body{
+.body {
     margin: auto;
 }
-.page{
+
+.page {
     width: 90%;
     zoom: 80%;
 }
-#portfolio{
-    max-width: 1162px; /* You can also use a fixed maximum width */
+
+@media (min-width: 2000px) {
+    .page {
+        zoom: 100%;
+    }
+}
+
+@media (min-width: 2300px) {
+    .page {
+        zoom: 120%;
+    }
+}
+
+#portfolio {
+    max-width: 1162px;
+    /* You can also use a fixed maximum width */
     width: fit-content;
-    height: 600px; /* Set the fixed height */
-    background-color: #fff; /* Set your desired background color */
+    height: 600px;
+    /* Set the fixed height */
+    background-color: #fff;
+    /* Set your desired background color */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     display: grid;
-    grid-template-columns: repeat(13, 12px 600px 50px 50px  50px 50px 50px 50px 50px 50px 50px 50px 50px);    
+    grid-template-columns: repeat(13, 12px 600px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px);
 }
 
-.portfolio-image-wrap{
+.portfolio-image-wrap {
     height: 600px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,46 +43,48 @@
 }
 
 
-.mark{
+.mark {
     height: 10px;
     margin-left: 20px;
     width: 10px;
 }
 
-#cover{
+#cover {
     border-left: 24px solid #fff;
 }
 
-.grid-active{
+.grid-active {
     display: grid;
     grid-template-columns: 50px 520px;
 }
 
-.info{
+.info {
     font-family: "Lato";
     font-weight: 300;
     padding-top: 10px;
 }
 
-.title{
+.title {
     font-size: 22px;
     font-weight: 700;
     font-family: "Arimo";
     /* font-family: "Roboto Slab"; */
 }
 
-a{
-    color: #444;  
+a {
+    color: #444;
     text-decoration: none;
 }
+
 a:hover {
-    color: #888;  
+    color: #888;
 }
-#portfolio a:hover{
+
+#portfolio a:hover {
     color: black !important;
 }
 
-.tag-div{
+.tag-div {
     flex-direction: row !important;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,80 +93,91 @@ a:hover {
     position: relative;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content:safe;
+    justify-content: safe;
 }
-.highlight-link{
+
+.highlight-link {
     text-decoration: underline;
     font-weight: 700;
 }
-.tag{
+
+.tag {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: .01em;
     width: fit-content;
-    color :#000;
+    color: #000;
     margin-right: 10px;
     padding: 4px 12px;
     border-radius: 5px;
     margin-top: 0px;
 }
-.tag-des{
-    color :#9e6c64;
+
+.tag-des {
+    color: #9e6c64;
     background-color: #f5eceb
 }
-.tag-dev{
+
+.tag-dev {
     /* border-color: #5a7ca1; */
-    color :#2d537d;
+    color: #2d537d;
     background-color: #f0f5fa
 }
-.tag-pm{
+
+.tag-pm {
     /* border-color: #db840b; */
-    color :#d99904;
+    color: #d99904;
     background-color: #f5f2eb
 }
-p{
-    font-size:16px;
+
+p {
+    font-size: 16px;
     line-height: 1.3;
     margin-block-start: 0.5em;
 }
 
-.disabled{
+.disabled {
     opacity: 50%;
-    cursor:not-allowed;
-}
-.disabled a{
-    opacity: 100% !important;
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
 
-.content-text{
+.disabled a {
+    opacity: 100% !important;
+    cursor: not-allowed;
+}
+
+.content-text {
     line-height: 2;
     font-size: 22px;
     margin-top: 30px;
 }
 
-.invisible{
-    color: rgba(0,0,0,0) ;
+.invisible {
+    color: rgba(0, 0, 0, 0);
 }
-.visible{
-    color: rgb(0,0,0) !important;
+
+.visible {
+    color: rgb(0, 0, 0) !important;
 }
-.des-text{
+
+.des-text {
     margin-top: 10px;
     font-size: 18px;
     line-height: 1.5;
 }
-.des-title{
+
+.des-title {
     font-weight: 600 !important;
 }
-.social-icon{
-    width:30px;
+
+.social-icon {
+    width: 30px;
     height: 30px;
     border: 1px solid black;
     margin-right: 15px;
 }
 
-.inline-link{
+.inline-link {
     text-decoration: underline;
     font-weight: 500;
 }
