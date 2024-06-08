@@ -160,7 +160,7 @@ body {
 
 @media (min-width: 2000px) {
     :root {
-        font-size: 75%;
+        font-size: 68.75%;
     }
 
     body {
@@ -170,7 +170,7 @@ body {
 
 @media (min-width: 2300px) {
     :root {
-        font-size: 90%;
+        font-size: 75%;
     }
 
     body {

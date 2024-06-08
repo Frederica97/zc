@@ -25,7 +25,7 @@
 
 .dic-grid {
     display: grid;
-    grid-template-columns: 30px auto;
+    grid-template-columns: 3rem auto;
     gap: 20px;
     padding: 10px 0;
 }
@@ -119,8 +119,8 @@ a:hover {
     font-size: 1.2rem;
     letter-spacing: .01em;
     width: fit-content;
-    margin-right: 10px;
-    padding: 4px 15px;
+    margin-right: 0.6rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 5px;
     margin-top: 0px;
 }
