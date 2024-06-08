@@ -34,7 +34,7 @@ var portfolio_set = [
 function expand(element) {
     var line = element.querySelector(".mark");
     if (line) {
-        line.style.height = "170px";
+        line.style.height = "150px";
         line.style.width = "5px";
         line.style.transition = "all 1s";
         var info = element.querySelector(".info");
@@ -124,7 +124,8 @@ function indexHoverOver(element) {
     }
 }
 // click that Contact
-contactMenu.addEventListener("click", function () {
+
+function contactPage(){
     if (portfolio) {
         portfolio.style.gridTemplateColumns =
             "repeat(13, 12px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 600px)";
@@ -133,7 +134,19 @@ contactMenu.addEventListener("click", function () {
     collapse(portfolio_04);
     collapse(portfolio_03);
     expand(portfolio_13);
-});
+    indexHover(portfolio_13);
+}
+
+contactMenu.addEventListener("click", contactPage);
+
+window.onload = function() {
+    const data = localStorage.getItem('setToContact');
+    if (data) {
+        contactPage();
+        localStorage.removeItem('setToContact');
+    }
+}
+
 //click that work
 workMenu.addEventListener("click", function () {
     if (portfolio) {

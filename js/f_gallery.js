@@ -19,6 +19,7 @@ function FormatGallery(gallery) {
     gallery.style.gridTemplateColumns = pattern;
     gallery.style.gap = "20px";
     gallery.style.transition = "all 1s";
+
 }
 
 function setHeight() {
@@ -68,6 +69,7 @@ function HoverGallery() {
                     if (texts) {
                         HoverWithText(currentGallery, currentIndex);
                     }
+                 
                 },
                 false
             );

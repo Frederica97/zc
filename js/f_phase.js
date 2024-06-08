@@ -77,7 +77,7 @@ refresh();
 
 document.addEventListener("DOMContentLoaded", () => {
     const phaseContainer = document.getElementById("Container-phase");
-
+    
     function isTopInView() {
         const rect = phaseContainer.getBoundingClientRect();
         return rect.top >= 10;
@@ -98,19 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener(
         "scroll",
         (event) => {
-            const scrollDistace = window.scrollY || window.pageYOffset;
-            if (scrollDistace > 0) {
-                // scroll up
-                if (isTopInView()) {
-                    amplifyB();
+            if (phaseContainer){
+                const scrollDistace = window.scrollY || window.pageYOffset;
+                if (scrollDistace > 0) {
+                    // scroll up
+                    if (isTopInView()) {
+                        amplifyB();
+                    }
                 }
-            }
-            if (isTopOut()) {
-                if (phase) {
-                    phase.style.gridTemplateColumns = "1fr 1fr";
-                    phase.style.transition = "all 1s";
-                    equalizePhase(phase_01);
-                    equalizePhase(phase_02);
+                if (isTopOut()) {
+                    if (phase) {
+                        phase.style.gridTemplateColumns = "1fr 1fr";
+                        phase.style.transition = "all 1s";
+                        equalizePhase(phase_01);
+                        equalizePhase(phase_02);
+                    }
                 }
             }
         },

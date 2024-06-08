@@ -1,0 +1,56 @@
+.Menu a {
+    color: #444;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    color: #888;
+}
+
+.Container-Menu {
+    width: 90%;
+    margin: 0 auto;
+    height: 2.7vh;
+}
+
+.Menu {
+    text-align: right;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    padding: 2vh;
+    top: 0;
+    background-color: #fff;
+}
+
+.Menu-item {
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    font-size: 1.8rem;
+    transition: all 0.25s;
+    padding-left: 50px;
+}
+
+.Menu-item:hover {
+    opacity: 0.5;
+}
+
+.Menu-title {
+    font-weight: 700 !important;
+    font-family: "Arimo", sans-serif !important;
+    padding-left: 0px !important;
+    font-size: 2.4rem;
+}
+
+.Container-flex {
+    display: flex;
+    z-index: 100;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Menu-mark {
+    height: 3px;
+    margin: auto;
+    width: 100%;
+}

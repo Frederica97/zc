@@ -6,7 +6,7 @@
     <link id="favicon" rel="icon" type="image/png" href="img/zc_logo4.png" />
 
     <link rel="stylesheet" href="css/style.css" tyle="text/css" />
-    <link rel="stylesheet" href="css/style-nav.css" tyle="text/css" />
+    <link rel="stylesheet" href="css/s_general.css" tyle="text/css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Arimo:400,500,600,700"
@@ -22,7 +22,7 @@
     />
   </head>
   <body>
-    <div id="splash">
+    <!-- <div id="splash">
       <img id="splash-image" src="img/splash_screen_2.png" alt="" />
     </div>
 
@@ -46,6 +46,31 @@
             </div>
             <div class="Menu-item">
               <a id="Menu-about" href="#">About</a>
+            </div>
+            <div class="Menu-item">
+              <a id="Menu-contact" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <div id="splash">
+      <img id="splash-image" src="img/splash_screen_2.png" alt="" />
+    </div>
+
+    <nav class="Menu" id="Menu-home" style="display: none">
+      <div class="Container-Menu">
+        <div class="Container-flex">
+          <div class="Menu-title Menu-item">
+            <a href="index.html">ZN </a>
+          </div>
+          <div class>
+            <div class="Menu-item">
+              <a id="Menu-work" href="work.html">Work</a>
+            </div>
+            <div class="Menu-item">
+              <a id="Menu-about" href="zc.html">About</a>
             </div>
             <div class="Menu-item">
               <a id="Menu-contact" href="#">Contact</a>
@@ -127,90 +152,37 @@
             </div>
           </div>
         </div>
-        <a href="lotus.html" id="04">
-          <div
-            class="portfolio-image-wrap"
-            style="background-image: url('img/04.webp')"
-          ></div>
-          <div class="portfolio-info">
-            <div class="grid">
-              <img class="mark" src="img/000.jpg" alt="" />
-              <div class="info" hidden>
-                <span class="title"> LOTUS APP</span>
-                <p>
-                  A one-year old Startup, backed with Harvard Incubation
-                  Funding. Develop social platform supporting converstaion about
-                  women+'s reproductive health.
-                </p>
-                <div
-                  style="
-                    display: inline;
-                    position: relative;
-                    justify-content: space-between;
-                  "
-                >
-                  <div class="tag-div">
-                    <h5 class="tag tag-des">UIUX</h5>
-                    <h5 class="tag tag-pm">Startup</h5>
-                    <h5 class="tag tag-dev">iOS Development</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+        <a href="hls.html" id="04">
+          <div class="portfolio-image-wrap">
+            <img
+              src="img/hls_03.gif"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
           </div>
-        </a>
-        <a href="autodesk.html" id="05">
-          <div
-            class="portfolio-image-wrap"
-            style="background-image: url('img/05.webp')"
-          ></div>
+
           <div class="portfolio-info">
             <div class="grid">
               <img class="mark" src="img/000.jpg" alt="" />
               <div class="info" hidden>
-                <span class="title"> DYNAMO, AUTODESK</span>
+                <span class="title"> HARVARD AI PROJECT</span>
                 <p>
-                  Design and prototype data selection process with Dynamo-Cloud
-                  Connection. Facilitate the cloud transition for product with
-                  11k Monthly Active Users.
+                  Build an GEN-AI workflow to generate book subject headings for
+                  library catalogers using LLM and Retrieval Augmented
+                  Generation (RAG), result in a 2.62% time consumption
                 </p>
                 <div class="tag-div">
-                  <h5 class="tag tag-des">User Experience</h5>
-                  <h5 class="tag tag-pm">Strategy</h5>
-                  <h5 class="tag tag-dev">Cloud API</h5>
-                  <h5 class="tag tag-dev">3D</h5>
+                  <h5 class="tag tag-dev">Gen-AI</h5>
+                  <h5 class="tag tag-dev">LLM + RAG</h5>
+                  <h5 class="tag tag-dev">API</h5>
+                  <h5 class="tag tag-pm">PM</h5>
                 </div>
               </div>
             </div>
           </div>
         </a>
-        <a href="porsche.html" id="06">
-          <div
-            class="portfolio-image-wrap"
-            style="background-image: url('img/06.webp')"
-          ></div>
-          <div class="portfolio-info">
-            <div class="grid">
-              <img class="mark" src="img/000.jpg" alt="" />
-              <div class="info" hidden>
-                <span class="title"> PORSCHE RETAIL EXPERIENCE</span>
-                <p>
-                  Design and build the experimental Porsche Studio in Changsha,
-                  China, with a mix of immersive reality/virtual experience. It
-                  is the <b>world's first</b> exclusive virtual art gallery by
-                  an automotive brand.
-                </p>
-                <div class="tag-div">
-                  <h5 class="tag tag-des">Experience</h5>
-                  <h5 class="tag tag-pm">Brand</h5>
-                  <h5 class="tag tag-pm">Strategy</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="morrow.html" id="07">
-          <!-- <a href="#"><div  class="portfolio-image-wrap" style="background-image: url('img/07.jpg')"></div></a> -->
+
+        <a href="morrow.html" id="05">
           <div
             class="portfolio-image-wrap"
             style="background-image: url('img/mw_000.gif')"
@@ -236,13 +208,100 @@
             </div>
           </div>
         </a>
-        <div id="08" class="disabled">
-          <a href="#"
-            ><div
-              class="portfolio-image-wrap"
-              style="background-image: url('img/08.webp')"
-            ></div
-          ></a>
+        <a href="autodesk.html" id="06">
+          <div
+            class="portfolio-image-wrap"
+            style="background-image: url('img/05.webp')"
+          ></div>
+          <div class="portfolio-info">
+            <div class="grid">
+              <img class="mark" src="img/000.jpg" alt="" />
+              <div class="info" hidden>
+                <span class="title"> DYNAMO, AUTODESK</span>
+                <p>
+                  Design and prototype data selection process with Dynamo-Cloud
+                  Connection. Facilitate the cloud transition for product with
+                  11k Monthly Active Users.
+                </p>
+                <div class="tag-div">
+                  <h5 class="tag tag-pm">Strategy</h5>
+                  <h5 class="tag tag-pm">B2B</h5>
+                  <h5 class="tag tag-des">User Experience</h5>
+                  <h5 class="tag tag-dev">API</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="lotus.html" id="07">
+          <div
+            class="portfolio-image-wrap"
+            style="background-image: url('img/04.webp')"
+          ></div>
+          <div class="portfolio-info">
+            <div class="grid">
+              <img class="mark" src="img/000.jpg" alt="" />
+              <div class="info" hidden>
+                <span class="title"> LOTUS APP</span>
+                <p>
+                  A one-year old Startup, backed with Harvard Incubation
+                  Funding. Develop social platform supporting converstaion about
+                  women+'s reproductive health.
+                </p>
+                <div
+                  style="
+                    display: inline;
+                    position: relative;
+                    justify-content: space-between;
+                  "
+                >
+                  <div class="tag-div">
+                    <h5 class="tag tag-des">UIUX</h5>
+                    <h5 class="tag tag-dev">iOS Dev</h5>
+                    <h5 class="tag tag-pm">Startup</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="porsche.html" id="08">
+          <div
+            class="portfolio-image-wrap"
+            style="background-image: url('img/06.webp')"
+          ></div>
+          <div class="portfolio-info">
+            <div class="grid">
+              <img class="mark" src="img/000.jpg" alt="" />
+              <div class="info" hidden>
+                <span class="title"> PORSCHE RETAIL EXPERIENCE</span>
+                <p>
+                  Design and build the experimental Porsche Studio in Changsha,
+                  China, with a mix of immersive reality/virtual experience. It
+                  is the <b>world's first</b> exclusive virtual art gallery by
+                  an automotive brand.
+                </p>
+                <div class="tag-div">
+                  <h5 class="tag tag-des">Experience</h5>
+                  <h5 class="tag tag-pm">Brand</h5>
+                  <h5 class="tag tag-pm">Strategy</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://www.youtube.com/watch?v=jhegAtoBGH4"
+          target="_blank"
+          id="09"
+        >
+          <div
+            class="portfolio-image-wrap"
+            style="background-image: url('img/08.webp')"
+          ></div>
           <div class="portfolio-info">
             <div class="grid">
               <img class="mark" src="img/000.jpg" alt="" />
@@ -251,7 +310,7 @@
                 <p>
                   Start your journey to find your best fit tech company and tech
                   office with Envis. A data visualization project with design
-                  and implementation.
+                  and implementation. Let's see what data say :D
                 </p>
                 <div class="tag-div">
                   <h5 class="tag tag-dev">Front-end Dev</h5>
@@ -260,14 +319,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <div id="09" class="disabled">
-          <a href="#"
-            ><div
-              class="portfolio-image-wrap"
-              style="background-image: url('img/09.webp')"
-            ></div
-          ></a>
+        </a>
+        <a href="file/portfolio_gsd_img2.pdf" target="_blank" id="10">
+          <div
+            class="portfolio-image-wrap"
+            style="background-image: url('img/09.webp')"
+          ></div>
           <div class="portfolio-info">
             <div class="grid">
               <img class="mark" src="img/000.jpg" alt="" />
@@ -275,7 +332,9 @@
                 <span class="title"> CROSSROADS</span>
                 <p>
                   Design in New York City a conversation about follow the
-                  established urban fabric or being an entropy.
+                  established urban fabric or being an entropy. The CROSSROADS
+                  project embraces both by allowing <b>Urban In</b> along 7th
+                  Ave and <b>Domestic Out</b> along 23rd Street.
                 </p>
                 <div class="tag-div">
                   <h5 class="tag tag-des">Architecture Design</h5>
@@ -284,8 +343,34 @@
               </div>
             </div>
           </div>
-        </div>
-        <div id="10" class="disabled">
+        </a>
+        <a href="file/portfolio_gsd_img2.pdf" target="_blank" id="11">
+          <div
+            class="portfolio-image-wrap"
+            style="background-image: url('img/10.webp')"
+          ></div>
+          <div class="portfolio-info">
+            <div class="grid">
+              <img class="mark" src="img/000.jpg" alt="" />
+              <div class="info" hidden>
+                <span class="title"> NYC PIAZZA</span>
+                <p>
+                  Address the citywide eagerness and urgency for public space.
+                  The project advocates for Privately Owned Public Space (POPS)
+                  in New York City. Ample public space is made possible with the
+                  innovative use of the <b>Suspended Structure</b>.
+                </p>
+                <div class="tag-div">
+                  <h5 class="tag tag-des">Architecture Design</h5>
+                  <h5 class="tag tag-des">Render</h5>
+                  <h5 class="tag tag-pm">Community</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- <div id="11" class="disabled">
           <a href="#"
             ><div
               class="portfolio-image-wrap"
@@ -304,13 +389,14 @@
                 </p>
                 <div class="tag-div">
                   <h5 class="tag tag-des">Architecture Design</h5>
+                  <h5 class="tag tag-des">Render</h5>
                   <h5 class="tag tag-pm">Community</h5>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="11" class="disabled">
+        </div> -->
+        <div id="12" class="disabled">
           <a href="#"
             ><div
               class="portfolio-image-wrap"
@@ -338,7 +424,7 @@
             </div>
           </div>
         </div>
-        <div id="12" class="disabled">
+        <!-- <div id="12" class="disabled">
           <a href="#"
             ><div
               class="portfolio-image-wrap"
@@ -361,18 +447,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div id="13" class="">
           <div
             class="portfolio-image-wrap"
             style="background-image: url('img/16.webp')"
           >
-            <div id="contact" style="padding: 40px" hidden>
-              <!-- <img src="img/zc_logo3.jpg" alt> -->
-              <!-- <p class="content-text invisible" style="font-weight: 500;">We have dream and vision. We are building the world a better place. Let's connect! 
-                                    Always down to collaborate in various products and design and brainstorm crazy ideas. ◪_◪
-                                </p><br> -->
-            </div>
+            <div id="contact" style="padding: 40px" hidden></div>
           </div>
 
           <div class="portfolio-info">
@@ -411,8 +492,6 @@
       </div>
     </main>
     <script src="js/index.js" defer type="text/javascript"></script>
-    <!-- <script src = "js/nav.js" type="text/javascript"></script> -->
     <script src="js/f_splash.js" defer type="text/javascript"></script>
-    <script src="js/window.js" type="text/javascript"></script>
   </body>
 </html>

@@ -1,441 +1,650 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Zinan Chi</title>
-        <link id="favicon" rel="icon" type="image/png" href="img/zc_logo4.png">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zinan Chi</title>
+    <link id="favicon" rel="icon" type="image/png" href="img/zc_logo4.png" />
+    <link rel="stylesheet" href="css/s_general.css" tyle="text/css" />
+    <link rel="stylesheet" href="css/s_projects.css" tyle="text/css" />
 
-        <link rel="stylesheet" href="css/style-nav.css" tyle="text/css">
-        <link rel="stylesheet" href="css/style-sidebar.css" tyle="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Bodoni"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Slab"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="splash">
+      <img id="splash-image" src="img/splash_screen_2.png" alt="" />
+    </div>
 
-        <link rel="stylesheet" href="css/style-projects.css" tyle="text/css">
-
-        <link
-            href="https://fonts.googleapis.com/css?family=Arimo:400,500,600,700"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700"
-            rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Libre Bodoni' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-
-    </head>
-    <body>
-        <div id="splash"><img id="splash-image" src = "img/splash_screen_2.png" alt=""></div>
-
-        <nav class="Menu " id="Menu-home">
-            <div class="Container-Menu">
-                <div class="Container-flex">
-                    <div class="Menu-title Menu-item">
-                        <a href="index.html">ZN </a>
-                    </div>
-                    <div class>
-                        <div class="Menu-item">
-                            <a id="Menu-work" href="work.html">Work</a>
-                        </div>
-                        <div class="Menu-item">
-                            <a id="Menu-resume"
-                            href="file/ZinanChi_resume_web.pdf" target="_blank">Resume</a>
-                        </div>
-                        <div class="Menu-item">
-                            <a id="Menu-about" href="zc.html">About</a>
-                        </div>
-                        <div class="Menu-item">
-                            <a id="Menu-contact" href="#Container-banner">Contact</a>
-                        </div>
-                    </div>
-                </div>
+    <nav class="Menu" id="Menu-home" style="display: none">
+      <div class="Container-Menu">
+        <div class="Container-flex">
+          <div class="Menu-title Menu-item">
+            <a href="index.html">ZN </a>
+          </div>
+          <div class>
+            <div class="Menu-item">
+              <a id="Menu-work" href="work.html">Work</a>
             </div>
-        </nav>
-        <main>
-            <div id="main-content">
-            <div id = "section-cover" class="background-image-wrap project-cover" style="background-image: url('img/ad_05.png')">
-                <div class = "Container-project-title">
-                    <h2>AUTODESK</h2>
-                    <h3><b>Dynamo Data Selection Experience Research</b> </h3>
-                    <p> Design and prototype Data Selection Experiences, with 3D Geometries and Project Directories 
-                    </p>
-
-                </div>
+            <div class="Menu-item">
+              <a id="Menu-about" href="zc.html">About</a>
             </div>
-            <div class = "Container-cluster">
-                <div class="Container-wrapper info">
-                    <div class="Container-flex">
-                        <div class="Container-center info-col">
-                            <div class="Container-flex info-flex-col">
-                                <div class="des-text des-title">Role</div>
-                                <div class="des-text">User Experience Intern</div>
-                                <div class="des-text">User Interview</div>
-                                <div class="des-text">UX Designer</div>
-                                <div class="des-text">Prototyper</div>
-                            </div>
-                        </div>
-                        <div
-                            class="Container-center info-col">
-                            <div class="Container-flex info-flex-col">
-                                <div class="des-text des-title">Tools</div>
-                                <div class="des-text">Figma</div>
-                                <div class="des-text">C#, Javascript</div>
-                                <div class="des-text">OAuth, GraphQL</div>
-
-                            </div>
-                        </div>
-                        <div
-                            class="Container-center info-col">
-                            <div class="Container-flex info-flex-col">
-                                <div class="des-text des-title">Timeline</div>
-                                <div class="des-text">May - Aug, 2023 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="Menu-item">
+              <a id="Menu-contact" >Contact</a>
             </div>
-
-            <div id="side-nav">
-                <div class="dot" hidden></div>
-                <div class="dot" hidden></div>
-                <div class="dot" hidden></div>
-                <div class="dot" hidden></div>
-                <div class="dot" hidden></div>
-                <div class="dot" hidden></div>
-            </div>
-            <div id="side-nav-content">
-            <section class="Container-cluster" id="section1">
-                <h5 class="section" style="border-left: 17px solid #c2c2e0">Context</h5>
-                <h3 class="content-title">Dynamo in Migration from a Desktop Tool to Support Autodesk Cloud </h3>
-                <p class="content-text">
-                    Dynamo is a <b>11,000+ MAU</b> automation tool in Autodesk's <b>AEC</b> (Architecture, Engineering & Construction) software collection. 
-                    Within the <b>Computational and Design Automation group</b>, Dynamo supports Desktop-based leading 3D modeling software --<b>Revit, Civil3D, Alias, and FormIt.</b><br><br>
-                    As Autodesk pivoted on its cloud platform strategic reorganization in 2021, the Dynamo team collaborate with Autodesk Platform Service
-                    to move ahead to <b>a platoform-based service.</b> Dynamo is heading towards an exciting stage by the new opportunities brought by the cloud to 
-                    push the efficiency frontier forward through <b>batch-data selection for automation and its intuitive user experience </b>.
-                    The 12-week project focus on <b>researching, designing, and prototyping new Dynamo Nodes for data selection for cloud.</b> 
-                </p>
-                <div class="Container-col-4">
-                    <div>
-                        <div class="Container-logo"><img class="content-logo" src="img/ad_logo_01.png" alt></div>
-                        <h3 class="des-text article">Learn More about Autodesk </h3>
-                        <a href="https://www.autodesk.com/" target="_blank">
-                            <span class="des-text  des-title"> >>>>> </span>
-                        </a>
-                    </div>
-                    <div>
-                        <div class="Container-logo"><img class="content-logo" src="img/ad_logo_02.png" alt></div>
-                        <h3 class="des-text article">Dynamo and its community </h3>
-                        <a href="https://dynamobim.org/" target="_blank">
-                            <span class="des-text  des-title"> >>>>> </span>
-                        </a>
-                    </div>
-                    <div>
-                        <div class="Container-logo"><img class="content-logo" src="img/ad_logo_01.png" alt></div>
-                        <h3 class="des-text article">How Autodesk Construction Cloud help sustainability design </h3>
-                        <a href="https://adsknews.autodesk.com/en/news/early-decisions-in-construction/" target="_blank">
-                            <span class="des-text  des-title"> >>>>> </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="Container-full">
-                    <p class="content-text">
-                        Dynamo holds responsibility toward both internal and external stakeholders. As a product that builds upon other Autodesk products, Dynamo collaborates closely with <b>Revit</b> and <b>Civil3D</b>. In line with Autodesk's overarching strategy, ongoing dialogues with the <b>data team </b> and the <b>AI accelerator </b>team have been formalized.<br>
-                        <br>Dynamo serves as a platform that caters to both users and developers. Our team's objective has been to create a product that not only provides a valuable service but also enhances the network effect.
-                    </p>
-                    <div class = "Container-quote-left" style="margin: auto; margin-top: 0px !important">
-                        <div class="Container-image" style="margin-top: 50px"><img src="img/ad_22.png"></div>
-                        <div class="Container-grid" >
-                            <div>
-                                <p class="content-text">
-                                   <b> Dynamo Stakeholders</b><br>
-                                    Internal Stakeholders and users
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-
-            </section>
-
-            <section id="section2">
-                <div class="box-right" style="background: #f3f3f3"></div>
-                <div class="Container-full" style="background: #f3f3f3">
-                    <div class="Container-cluster" style="padding-bottom: 0px !important;">
-                        <h5 class="section" style="border-left: 17px solid #c2c2e0">User Interview</h5>
-                        <h3 class="content-title">Understand Dynamo's Use Cases and Unique Value through Interview</h3>
-                        <p class="content-text" style="font-size: 25px; font-weight: 600; margin-right:0px; text-align: right !important; ">Recruitment -- Diversity in Community </p>
-                        <p class="content-text">
-                            With an established user group and its community via <b>Dyanmo Forum and Dynamo Linkedin Groups</b>, I recruited a pool of interviewees and selected five of them with <b>diversity in experience, Dynamo environment, and working environment.</b>
-                            The diversity of interviewees draws a <b>user persona</b> in each of them. <br>
-                            Three of them have above five years of experience with Dynamo, one is intermediate level and one beginner level. 
-                            Three of them use Dynamo in Revit, one of them using Dynamo in Civil3D, and one use Dynamo Sandbox for testing plugins.
-                            They are from different working environment, covering BIM consultant companies, in-house BIM technician in architecture firm, and architectural design agencies. 
-                        </p>
-                        <div id="Container-AD01" style = "margin: 100px 0;">
-                            <div id="01" class="gallery-image-wrap-AD still01" style="background-image: url('img/ad_Page_01.jpg')"></div>
-                            <div id="02" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_02.jpg')"></div>
-                            <div id="03" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_03.jpg')"></div>
-                            <div id="04" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_04.jpg')"></div>
-                            <div id="05" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_05.jpg')"></div>
-                            <div id="06" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_06.jpg')"></div>
-                        </div>
-                        <p class="content-text" style="font-size: 25px; font-weight: 600; margin-right:0px; text-align: right !important; padding-top:80px !important ">Method -- Interview, Qualitative and Quantitative analysis </p>
-                        <p class="content-text">
-                            The <b>user research method</b> includes <b>interviews</b> conducted through Zoom and <b>qualitative and quantitative analysis</b> via
-                            Dovetail. Dovetail enables direct zoom recording integration and generates accurate and readable transcripts in paragraphs. With organized videos in 
-                            pipeline, I went back to those recordings and transcripts with quanlitative analysis -- <b>taging content and highlighting storng quotes.</b>
-                            With Dovetail integrated tools, the quantitative analysis cross-interviews <b>organized tags into graphs, created tables for similar patterns in cases, and generated word cloud. </b>
-                            Through the word graph, we see Dynamo is an automation tool for productivity, with is strength in computational and generative design and management in data workflow. 
-                        </p>
-                        <div class="Container-col-3">
-                            <div>
-                                <img src = "img/ad_09.png">
-                                <h3 class="des-text">Interview </h3>
-                            </div>
-                            <div>
-                                <img src = "img/ad_10.png">
-                                <h3 class="des-text">Qualitative Analysis </h3>
-                            </div>
-                            <div>
-                                <img src = "img/ad_11.png">
-                                <h3 class="des-text">Quantitative analysis </h3>
-                            </div>
-                        </div>
-                        <div >
-                            <p class="content-text subtitle">Dynamo as a Service Platform</p>
-                            <!-- <div class = "Container-quote-left" style="width: 100%;">
-                                <img class = ""style= "width: 100%;"src = "img/ad_20.PNG" alt="">
-                                <p class="content-text" style="margin-top: 0px;">
-                                    Dynamo has <b>developers</b> to write new nodes, <b>creative users</b> to write graphs, and <b>Dynamo Player</b> users to automate the tasks.                      
-                                </p>
-                            </div> -->
-                            <div class = "Container-quote-right" style="width: 100%;">
-                                <p class="content-text" style="margin-top: 0px;">
-                                    Dynamo has <b>developers</b> to write new nodes, <b>creative users</b> to write graphs, and <b>Dynamo Player</b> users to automate the tasks.                      
-                                </p>
-                                <img class = ""style= "width: 100%;"src = "img/ad_20.png" alt="">
-                            </div>
-                            <div class = "Container-full Container-quote-right" style="width: 100%;">
-                                <p class="content-text" style="margin-top: 0px;">
-                                    Dynamo is utilized for <b>automating tasks, manipulating data, and expediting design iterations.  </b>
-                                </p>
-                                <img class = "" style= "width: 100%;"src = "img/ad_21.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-left"  style="background: #f3f3f3"></div>
-            </section>
-
-            <section class = "Container-full" style="width:80%; margin: auto !important"  id="section3">
-                <h5 class="section" style="border-left: 17px solid #c2c2e0">User Experience</h5>
-                <h5 class="section" style="border-left: 17px solid #c2c2e0">in Dynamo Cloud Connection </h5>
-
-                <div id="Container-AD02" style = "margin-top: 80px;">
-                    <div id="07" class="gallery-image-wrap-AD still02" style="background-image: url('img/ad_Page_07.jpg')"></div>
-                    <div id="08" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_08.jpg')"></div>
-                    <div id="09" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_09.jpg')"></div>
-                    <div id="10" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_10.jpg')"></div>
-                    <div id="11" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_11.jpg')"></div>
-                    <div id="12" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_12.jpg')"></div>
-                    <div id="13" class="gallery-image-wrap-AD" style="background-image: url('img/ad_Page_13.jpg')"></div>
-                </div>
-            </section>
-            
-
-            <div class="Container-cluster">
-                <h5 class="section" style="border-left: 17px solid #c2c2e0">Benefits</h5>
-                <h3 class="content-title">An Example for Dynamo Cloud Connection's Benefit</h3>
-                <p class="content-text" style="font-size: 25px; font-weight: 600; margin-right:0px; text-align: right !important; "> -- Calculate Door Fire Rating in Models to Meet Building Codes </p>
-                <p class="content-text">
-                    In F.B.'s case, he would like to check Revit Data sheet with regional codes to make sure all doors meet the building fire codes. 
-                    Here we compare three workflow with Revit, Dynamo, and Dynamo Cloud connection. 
-                    <ol> <spam class="content-text"><b>[Revit]</b> -- F.B. compared data cross-platform. He had Revit Schedule to view data from the 3D design file, 
-                        and compared it with the imported building codes in Excel. &nbsp&nbsp<spam class="tag tag-bad">manual work</spam> <spam class="tag tag-bad">low accuracy</spam>
-                    </spam></ol>
-                    <ol> <spam class="content-text"><b>[Dynamo]</b> -- The comparison is automated by in Dynamo where it reads data from Excel and compares within platform
-                        to check 3D model data.&nbsp&nbsp <spam class="tag tag-good">automation</spam> <spam class="tag tag-good">high accuracy</spam> 
-                    </spam></ol>
-                    <ol> <spam class="content-text"><b>[Dynamo Cloud Connection]</b> -- With Autodesk Cloud connected, multiple design files can be measured with a single click.
-                        Especially with projects in the same region where they share the same building codes. 
-                        For fire code inspector, they can even reduce manual work to open, close, and run files through the Dynamo Batch automation. 
-                        &nbsp&nbsp<spam class="tag tag-good">automation</spam> <spam class="tag tag-good">high accuracy</spam> <spam class="tag tag-good">batch files</spam> 
-                    </spam></ol>
-                </p>
-                <br><br>
-                <img style= "width: 100%;"src = "img/ad_06.png" alt="">
-                <img style= "width: 100%;"src = "img/ad_07.png" alt="">
-                <img style= "width: 100%;"src = "img/ad_08.png" alt="">
-            </div>            
-
-            <section id="section4">
-                <div class="box-right" style="background: #f3f3f3"></div>
-                <div class="Container-full" style="background: #f3f3f3; padding-top: 0 !important;">
-
-                    <div class="Container-cluster" style="margin-top: 0; padding-bottom: 0px !important;">
-                        <div id = "image-02" class="background-image-wrap" style="background-image: url('img/ad_13.png')"></div>
-
-                        <h5 class="section" style="border-left: 17px solid #c2c2e0">Workflow</h5>
-                        <h3 class="content-title">Design Focus</h3>
-                        <p class="content-text">
-                            The communication of Dynamo to Cloud includes authentication to load project, data selection, local modification, and send the updated data back. 
-                            The research focus on the data selection process and 
-                        </p>
-                        <img style="padding-top: 80px;" class="content-logo" src="img/ad_15.png" alt>
-
-                    </div>
-                </div>
-                <div class="box-left"  style="background: #f3f3f3"></div>
-            </section>
-
-            <section id="section5" class = "Container-full" style="width: 80%; margin:auto">
-                <h5 class="section"style="border-left: 17px solid #c2c2e0">Dynamo Node Design</h5>
-
-                <div class = "Container-quote-left" style="margin: auto; margin-top: 100px !important; padding-top: 80px;">
-                    <div class="Container-grid" >
-                        <img style=" width: 100%;" class="content-logo gallery-image-wrap" src="img/ad_16.gif" alt>
-                    </div>
-                    <div>
-                        <p class="content-text"><b>Dropdown Menu Node</b></p>
-                        <p class="content-text">
-                            Dropdown Menu offer an array of choices for selecting directories including single file and multiple files in different folders. 
-                        </p>
-                        <spam class="tag tag-good">common UI</spam>
-                        <spam class="tag tag-good">batch file</spam>
-                    </div>
-                </div>
-                <div class = "Container-quote-right" style="margin: auto; margin-top: 100px !important; padding-top: 80px;">
-                    <div>
-                        <p class="content-text"><b>GraphQL Node</b></p>
-                        <p class="content-text">GraphQL is an efficient query system compared to RestAPI. 
-                            The node highlights Dynamo's potential as a utility tool for users with programming expertise. 
-                        </p>
-                        <spam class="tag tag-good">efficient</spam>
-                        <spam class="tag tag-good">batch file</spam>
-                        <spam class="tag tag-bad">high learning curve</spam>
-                    </div>
-                    <div class="Container-grid" >
-                        <img style=" width: 100%;" class="content-logo gallery-image-wrap" src="img/ad_17.gif" alt>
-                    </div>
-                </div>
-                <div class = "Container-quote-left" style="margin: auto; margin-top: 100px !important; padding-top: 80px;">
-                    <div class="Container-grid" >
-                        <img style=" width: 100%;" class="content-logo gallery-image-wrap" src="img/ad_18.gif" alt>
-                    </div>
-                    <div>
-                        <p class="content-text"><b>Large Model Viewer</b></p>
-                        <p class="content-text">
-                            This node streamlines the data selection process in a visually engaging large model viewer. 
-                            Users can intuitively select geometries or apply an accurate data selection filter. 
-                        </p>
-                        <spam class="tag tag-good">intuitive</spam>
-                        <spam class="tag tag-good">visual hint</spam>
-                        <spam class="tag tag-good">batch file</spam>
-                    </div>
-                </div>
-            </section>
-
-
-            <div class=" Container-full Container-image" style = "width: 80%; margin: auto"><img src="img/ad_19.jpg" alt></div>
-
-            <section class="Container-cluster Container-grid" id="section6">
-                <div>
-                    <h5 class="section" style="border-left: 17px solid #c2c2e0">Thoughts</h5>
-                    <h3 class="content-title">Collaboration & Community </h3>
-                    <p class="content-text" style="font-size: 25px; font-weight: 600; margin-right:0px; text-align: right !important; ">Cross-Organization Collaboration </p>
-                    <p class="content-text">
-
-                        Having been a part of a large tech firm, I deeply valued was the abundance of resources and a pool of exceptional talents in the organization. 
-                        As Dynamo functions as a cross-product and cross-platform automation tool, fostering seamless communication and collaboration across various teams becomes indispensable.<br><br>
-                        Throughout the course of my internship, we proactively engaged with platform service teams, 
-                        working hand-in-hand to seamlessly integrate their web-based interfaces such as the <b>Large Model Viewer </b>and  <b>AEC Data Model </b> into Dynamo. 
-                        This collaboration aimed at delivering an enriched and immersive user experience. 
-                        As the discussions unfolded and the teams ventured into exploration, I identified and suggested pertinent shortcuts based on insights garnered from lessons learned by other groups. 
-                        This input notably contributed to the <b>efficient reallocation of resources within the team.</b> 
-
-                        <ol class="content-text"><b>Special thanks to the following team who shared ideas with me and the Dynamo team.</b> 
-                        <br><b>[Autodesk PSET]</b> Data Exchange Team, Authentication Team, Data Model Team, Large Model Viewer Team
-                        <br><b>[Autodesk COO]</b> Solution Architect
-                        <br><b>[Autodesk AEC Design]</b> Design Studio, User Research Team</ol><br><br>
-                    </p>
-                    <p class="content-text" style="font-size: 25px; font-weight: 600; margin-right:0px; text-align: right !important; ">Community </p>
-                    <p class="content-text">
-                        <b> Dynamo's user community</b> wins it in the competitive landscape. Community memebers share their insights and collectively troubleshoot issues in a creative design field.  
-                        This robust and supportive knowledge-based community significantly simplifies people's lives by facilitating a more seamless utilization of this automation tool. 
-                        What's more important, the Dynamo Team plays an important role in supporting the community, including  <b>engaging with users on forum and linkedin group, host bi-weekly Spirint Demos, and open to receive feedback from the user directly.</b>
-                        This experience has inspired me to become a dedicated advocate within my community, working relentlessly to advance the forefront of technology within the design industry.
-                    </p>
-                </div>
-            </section>
-
+          </div>
         </div>
-            <!-- <div class = "Container-cluster"></div> -->
+      </div>
+    </nav>
 
-            <div class="Container-cluster Container-col-2-end">
-                <a id="Container-prev" href="lotus.html">
-                    <img class="image-80" src="img/04.jpg">
-                    <div class="prev"> PREV</div>
-                    <div class="foot-text">lotus app</div>
-                    <div class = "tag-div">
-                        <h5>startup</h5> <h5>UIUX</h5> <h5>iOS dev</h5>
-                    </div>
-                </a>
-                <a id="Container-next" href="porsche.html">
-                    <img class="image-80" src="img/06.jpg">
-                    <div class="next">NEXT</div>
-                    <div class="foot-text">porsche retail experience</div>
-                    <div class = "tag-div-right">
-                        <h5>Experience</h5> <h5>Brand</h5><h5>Interior</h5>
-                    </div>
-                </a>
-            </div>
+    <main>
+      <div id="main-content" style="display: none">
+        <div
+          id="section-cover"
+          class="background-image-wrap project-cover"
+          style="background-image: url('img/ad_05.png')"
+        >
+          <div class="Container-project-title">
+            <div>
+              <h2>AUTODESK</h2>
+              <h3><b>Dynamo Data Selection Experience Research</b></h3>
 
-            <div class="Container-full" id="Container-banner">
-                <div class = "Container-cluster" style="width: 80%; margin: 0px auto !important; padding:0px  ">
-                    <a href="index.html">
-                        <img style="display: inline" class="content-logo" src="img/zc_logo3.png" alt>
-                        <h3 class="foot-text">ZINAN</h3>
-                    </a>
-                    <div class = "Container-col-4" style = "margin: 40px auto !important;  ">
-                        <div>
-                            <h3 class="foot-text">work</h3>
-                            <div class="des-text"><a href="lotus.html">Lotus App [StartUp]</a></div>
-                            <div class="des-text"><a href="autodesk.html">Dynamo, Autodesk</a></div>
-                            <div class="des-text"><a href="porsche.html">Porsche Retail Experience</a></div>
-                            <div class="des-text disabled">Envis</div>
-                            <div class="des-text disabled">Agrimove</div>
-                        </div>
-                        <div>
-                            <h3 class="foot-text">project</h3>
-                            <div class="des-text disabled">Crossroads</div>
-                            <div class="des-text disabled">Multiple Grounds</div>
-                            <div class="des-text disabled">Tessuto Studio</div>
-                        </div>
-                        <div>
-                            <h3 class="foot-text">about</h3>
-                            <div class="des-text"><a href="zc.html#zc-chunk">Personal</a></div>
-                            <div class="des-text"><a href="zc.html#zc-experience">Professional</a></div>
-                            <div class="des-text"><a href="file/ZinanChi_resume_web.pdf" target="_blank">Resume</a>
-                            </div>
-    
-                        </div>
-                        <div>
-                            <h3 class="foot-text">contact</h3>
-                            <div class="des-text"><a href="mailto:chizinan97@gmail.com">Email</a></div>
-                            <div class="Container-icon">
-                                <a href="https://www.linkedin.com/in/zinan-c/" target="_blank" ><img class="contact-icon" src="img/linkedin.png" alt></a>
-                                <a href="https://github.com/Frederica97" target="_blank" ><img class="contact-icon" src="img/github.png" alt></a>
-                                <a href="https://www.instagram.com/zinanchi97/" target="_blank" ><img class="contact-icon" src="img/instagram.png" alt></a>
-                            </div> 
-                        </div>
-                    </div><br><br>
-                    <div class="des-text"> © 2023 Zinan Chi. &nbsp; All rights reserved. &nbsp;| &nbsp;For further information, contact zinanchi@gsd.harvard.edu.</div>
-                </div>
+              <p>
+                Design and prototype Data Selection Experiences, with 3D
+                Geometries and Project Directories
+              </p>
             </div>
+          </div>
         </div>
-        </main>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/autodesk.js" type="text/javascript"></script>
-        <script src="js/sidebar.js" type="text/javascript"></script>
-        <script src = "js/nav.js" type="text/javascript"></script>
-        <script src = "js/window.js" type="text/javascript"></script>
-    </body>
+        <div class="Container-cluster">
+          <div class="info Container-3">
+            <div>
+              <p class="content-text" style="font-weight: 900">Role</p>
+              <p class="content-text">
+                UX Designer<br />
+                Strategist<br />
+                Prototyper
+              </p>
+            </div>
+            <div>
+              <p class="content-text" style="font-weight: 900">Tools</p>
+              <p class="content-text">
+                Figma<br />
+                C#, Javascript<br />
+                OAuth <br />
+                GraphQL
+              </p>
+            </div>
+            <div>
+              <p class="content-text" style="font-weight: 900">Timeline</p>
+              <p class="content-text">May - Aug, 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="side-nav">
+          <div class="dot" hidden></div>
+          <div class="dot" hidden></div>
+          <div class="dot" hidden></div>
+          <div class="dot" hidden></div>
+          <div class="dot" hidden></div>
+          <div class="dot" hidden></div>
+        </div>
+
+        <div id="side-nav-content">
+          <section class="Container-cluster" id="section1">
+            <h5 class="section" style="border-left: 1.4rem solid #c2c2e0">
+              Context
+            </h5>
+            <h3 class="content-title">
+              Dynamo in Migration from a Desktop Tool to Support Autodesk Cloud
+            </h3>
+            <p class="content-text">
+              Dynamo is a <b>11,000+ MAU</b> automation tool in Autodesk's
+              <b>AEC</b> (Architecture, Engineering & Construction) software
+              collection. Within the
+              <b>Computational and Design Automation group</b>, Dynamo supports
+              Desktop-based leading 3D modeling software --<b
+                >Revit, Civil3D, Alias, and FormIt.</b
+              ><br /><br />
+              As Autodesk pivoted on its cloud platform strategic reorganization
+              in 2021, the Dynamo team collaborate with Autodesk Platform
+              Service to move ahead to <b>a platoform-based service.</b> Dynamo
+              is heading towards an exciting stage by the new opportunities
+              brought by the cloud to push the efficiency frontier forward
+              through
+              <b
+                >batch-data selection for automation and its intuitive user
+                experience </b
+              >. The 12-week project focus on
+              <b
+                >researching, designing, and prototyping new Dynamo Nodes for
+                data selection for cloud.</b
+              >
+            </p>
+            <div class="Container-4" style="margin: 20px 0px">
+              <div>
+                <div class="Container-logo">
+                  <img class="content-logo" src="img/ad_logo_01.png" alt />
+                </div>
+
+                <p class="content-annotation" style="margin-top: 20px">
+                  Learn More about Autodesk
+                </p>
+                <a href="https://www.autodesk.com/" target="_blank">
+                  <span class="content-annotation"> >>>>> </span>
+                </a>
+              </div>
+              <div>
+                <div class="Container-logo">
+                  <img class="content-logo" src="img/ad_logo_02.png" alt />
+                </div>
+                <p class="content-annotation" style="margin-top: 20px">
+                  Dynamo and its community
+                </p>
+                <a href="https://dynamobim.org/" target="_blank">
+                  <span class="content-annotation"> >>>>> </span>
+                </a>
+              </div>
+              <div>
+                <div class="Container-logo">
+                  <img class="content-logo" src="img/ad_logo_01.png" alt />
+                </div>
+                <p class="content-annotation" style="margin-top: 20px">
+                  How Autodesk Construction Cloud help sustainability design
+                </p>
+                <a
+                  href="https://adsknews.autodesk.com/en/news/early-decisions-in-construction/"
+                  target="_blank"
+                >
+                  <span class="content-annotation"> >>>>> </span>
+                </a>
+              </div>
+            </div>
+
+            <p class="content-subtitle">Dynamo Stakeholder Map</p>
+            <div
+              class="Container-2-left"
+              style="margin: auto; margin-top: 0px !important"
+            >
+              <div class="Container-image">
+                <img src="img/ad_22.png" />
+              </div>
+              <div>
+                <p class="content-annotation">
+                  Internally, Dynamo builds on top of other Autodesk Products,
+                  like Revit and Civil3D. It collaborates with Research Groups
+                  like <b>data team </b> and the <b>AI accelerator </b>.
+                  <br /><br />
+                  Facing out, Dynamo serves as a software platform that caters
+                  to both <b>users</b> and <b>developers</b>.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="box-right" style="background: #f3f3f3"></div>
+            <div class="Container-full" style="background: #f3f3f3">
+              <div
+                class="Container-cluster"
+                style="padding-bottom: 0px !important"
+              >
+                <h5 class="section" style="border-left: 17px solid #c2c2e0">
+                  User Interview
+                </h5>
+                <h3 class="content-title">
+                  Understand Dynamo's Use Cases and Unique Value through
+                  Interview
+                </h3>
+                <p class="content-subtitle">
+                  Recruitment -- Diversity in Community
+                </p>
+                <p class="content-text">
+                  With an established user group and its community via
+                  <b>Dyanmo Forum and Dynamo Linkedin Groups</b>, I recruited a
+                  pool of interviewees and selected five of them with
+                  <b
+                    >diversity in experience, Dynamo environment, and working
+                    environment.</b
+                  >
+                  The diversity of interviewees draws a <b>user persona</b> in
+                  each of them. <br />
+                  Three of them have above five years of experience with Dynamo,
+                  one is intermediate level and one beginner level. Three of
+                  them use Dynamo in Revit, one of them using Dynamo in Civil3D,
+                  and one use Dynamo Sandbox for testing plugins. They are from
+                  different working environment, covering BIM consultant
+                  companies, in-house BIM technician in architecture firm, and
+                  architectural design agencies.
+                </p>
+
+                <div class="Container-galleries" style="margin: 60px 0">
+                  <div
+                    class="gallery-image gallery-display"
+                    style="background-image: url('img/ad_Page_01.jpg')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_Page_02.jpg')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_Page_03.jpg')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_Page_04.jpg')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_Page_05.jpg')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_Page_06.jpg')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_page_15.png')"
+                  ></div>
+                  <div
+                    class="gallery-image"
+                    style="background-image: url('img/ad_page_14.png')"
+                  ></div>
+                </div>
+                <p class="content-subtitle" style="margin-top: 60px !important">
+                  Method -- Interview, Qualitative and Quantitative analysis
+                </p>
+
+                <p class="content-text">
+                  The <b>user research method</b> includes
+                  <b>interviews</b> conducted through Zoom and
+                  <b>qualitative and quantitative analysis</b> via Dovetail.
+                  Dovetail enables direct zoom recording integration and
+                  generates accurate and readable transcripts in paragraphs.
+                  With organized videos in pipeline, I went back to those
+                  recordings and transcripts with quanlitative analysis --
+                  <b>taging content and highlighting storng quotes.</b> With
+                  Dovetail integrated tools, the quantitative analysis
+                  cross-interviews
+                  <b
+                    >organized tags into graphs, created tables for similar
+                    patterns in cases, and generated word cloud.
+                  </b>
+                  Through the word graph, we see Dynamo is an automation tool
+                  for productivity, with is strength in computational and
+                  generative design and management in data workflow.
+                </p>
+                <div class="Container-3">
+                  <div>
+                    <img src="img/ad_09.png" />
+                    <h3 class="des-text">Interview</h3>
+                  </div>
+                  <div>
+                    <img src="img/ad_10.png" />
+                    <h3 class="des-text">Qualitative Analysis</h3>
+                  </div>
+                  <div>
+                    <img src="img/ad_11.png" />
+                    <h3 class="des-text">Quantitative analysis</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-left" style="background: #f3f3f3"></div>
+          </section>
+          <div
+            class="Container-full"
+            style="width: 80%; margin: auto !important"
+            id="section3"
+          >
+            <h5 class="section" style="border-left: 17px solid #c2c2e0">
+              User Experience
+            </h5>
+            <h5 class="section" style="border-left: 17px solid #c2c2e0">
+              in Dynamo Cloud Connection
+            </h5>
+            <div class="Container-galleries" style="margin: 60px 0">
+              <div
+                class="gallery-image gallery-display"
+                style="background-image: url('img/ad_Page_07.jpg')"
+              ></div>
+              <div
+                class="gallery-image"
+                style="background-image: url('img/ad_Page_08.jpg')"
+              ></div>
+              <div
+                class="gallery-image"
+                style="background-image: url('img/ad_Page_09.jpg')"
+              ></div>
+              <div
+                class="gallery-image"
+                style="background-image: url('img/ad_Page_10.jpg')"
+              ></div>
+              <div
+                class="gallery-image"
+                style="background-image: url('img/ad_Page_11.jpg')"
+              ></div>
+              <div
+                class="gallery-image"
+                style="background-image: url('img/ad_Page_12.jpg')"
+              ></div>
+            </div>
+          </div>
+
+          <section class="Container-cluster">
+            <h5 class="section" style="border-left: 17px solid #c2c2e0">
+              Benefits
+            </h5>
+            <h3 class="content-title">
+              An Example for Dynamo Cloud Connection's Benefit
+            </h3>
+            <p class="content-subtitle">
+              -- Calculate Door Fire Rating in Models to Meet Building Codes
+            </p>
+            <p class="content-text">
+              In F.B.'s case, he would like to check Revit Data sheet with
+              regional codes to make sure all doors meet the building fire
+              codes. Here we compare three workflow with Revit, Dynamo, and
+              Dynamo Cloud connection.
+            </p>
+
+            <ol>
+              <spam class="content-text"
+                ><b>[Revit]</b> -- F.B. compared data cross-platform. He had
+                Revit Schedule to view data from the 3D design file, and
+                compared it with the imported building codes in Excel.
+                &nbsp&nbsp
+                <spam class="tag tag-bad">manual work</spam>
+                <spam class="tag tag-bad">low accuracy</spam>
+              </spam>
+            </ol>
+
+            <ol>
+              <spam class="content-text"
+                ><b>[Dynamo]</b> -- The comparison is automated by in Dynamo
+                where it reads data from Excel and compares within platform to
+                check 3D model data.&nbsp&nbsp
+                <spam class="tag tag-good">automation</spam>
+                <spam class="tag tag-good">high accuracy</spam>
+              </spam>
+            </ol>
+            <ol>
+              <spam class="content-text"
+                ><b>[Dynamo Cloud Connection]</b> -- With Autodesk Cloud
+                connected, multiple design files can be measured with a single
+                click. Especially with projects in the same region where they
+                share the same building codes. For fire code inspector, they can
+                even reduce manual work to open, close, and run files through
+                the Dynamo Batch automation. &nbsp&nbsp
+                <spam class="tag tag-good">automation</spam>
+                <spam class="tag tag-good">high accuracy</spam>
+                <spam class="tag tag-good">batch file</spam>
+              </spam>
+            </ol>
+            <br /><br />
+            <img style="width: 100%" src="img/ad_06.gif" alt="" />
+          </section>
+
+          <section id="section4">
+            <div class="box-right" style="background: #f3f3f3"></div>
+            <div
+              class="Container-full"
+              style="background: #f3f3f3; padding-top: 0 !important"
+            >
+              <div
+                class="Container-cluster"
+                style="margin-top: 0; padding-bottom: 0px !important"
+              >
+                <div
+                  id="image-02"
+                  class="background-image-wrap"
+                  style="background-image: url('img/ad_13.png')"
+                ></div>
+
+                <h5 class="section" style="border-left: 17px solid #c2c2e0">
+                  Workflow
+                </h5>
+                <h3 class="content-title">Design Focus on Data Selection</h3>
+                <p class="content-text">
+                  The communication of Dynamo to Cloud includes authentication
+                  to load project, data selection, local modification, and send
+                  the updated data back. The research focus on the data
+                  selection process.
+                </p>
+                <img
+                  style="padding-top: 80px; width: 100%"
+                  class="content-logo"
+                  src="img/ad_15.png"
+                  alt
+                />
+              </div>
+            </div>
+            <div class="box-left" style="background: #f3f3f3"></div>
+          </section>
+
+          <section
+            id="section5"
+            class="Container-full"
+            style="width: 80%; margin: auto"
+          >
+            <h5 class="section" style="border-left: 17px solid #c2c2e0">
+              Dynamo Node Design
+            </h5>
+
+            <div class="Container-2-left">
+              <div class="Container-grid">
+                <img
+                  style="width: 100%"
+                  class="content-logo gallery-image-wrap"
+                  src="img/ad_16.gif"
+                  alt
+                />
+              </div>
+              <div>
+                <p class="content-text"><b>Dropdown Menu Node</b></p>
+                <p class="content-annotation">
+                  Dropdown Menu offer an array of choices for selecting
+                  directories including single file and multiple files in
+                  different folders.
+                </p>
+                <div class="tag-div">
+                  <p class="tag-good">common UI</p>
+                  <p class="tag-good">batch file</p>
+                </div>
+              </div>
+            </div>
+            <div class="Container-2-right">
+              <div>
+                <p class="content-text"><b>GraphQL Node</b></p>
+                <p class="content-annotation">
+                  GraphQL is an efficient query system compared to RestAPI. The
+                  node highlights Dynamo's potential as a utility tool for users
+                  with programming expertise.
+                </p>
+                <div class="tag-div">
+                  <p class="tag-good">efficient</p>
+                  <p class="tag-good">batch file</p>
+                  <p class="tag-bad">high learning curve</p>
+                </div>
+              </div>
+              <div class="Container-grid">
+                <img
+                  style="width: 100%"
+                  class="content-logo gallery-image-wrap"
+                  src="img/ad_17.gif"
+                  alt
+                />
+              </div>
+            </div>
+            <div class="Container-2-left">
+              <!-- style="
+            margin: auto;
+            margin-top: 100px !important;
+            padding-top: 80px;
+          " -->
+              <div class="Container-grid">
+                <img
+                  style="width: 100%"
+                  class="content-logo gallery-image-wrap"
+                  src="img/ad_18.gif"
+                  alt
+                />
+              </div>
+              <div>
+                <p class="content-text"><b>Large Model Viewer</b></p>
+                <p class="content-annotation">
+                  This node streamlines the data selection process in a visually
+                  engaging large model viewer. Users can intuitively select
+                  geometries or apply an accurate data selection filter.
+                </p>
+                <div class="tag-div">
+                  <p class="tag-good">intuitive</p>
+                  <p class="tag-good">visual hint</p>
+                  <p class="tag-good">batch file</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div
+            class="Container-full Container-image"
+            style="width: 80%; margin: auto"
+          >
+            <img src="img/ad_19.jpg" alt />
+          </div>
+
+          <section class="Container-cluster" id="section6">
+            <div>
+              <h5 class="section" style="border-left: 1.4rem solid #c2c2e0">
+                Decision
+              </h5>
+              <h3 class="content-title">Large Language Viewer</h3>
+
+              <p class="content-text">
+                With the investigation on different modes of data selection, the
+                Product Manager and I made the decision to move along with the
+                Large Language Model interface. Firstly, it's a web product that
+                part of the users are already family with, there's smaller
+                onboarding costs and provides familiarities. Secondly, targeting
+                Dynamo users who are in AEC industry, a 3D geometric viewer
+                would be the best method to deliver information. Thirdly, the
+                development cost is the lowest with the ready-made api. To bring
+                some research project to applications that already have
+                established monthly active users.
+              </p>
+            </div>
+          </section>
+
+          <div class="Container-cluster" id="section6">
+            <div>
+              <h5 class="section" style="border-left: 1.4rem solid #c2c2e0">
+                Thoughts
+              </h5>
+
+              <h3 class="content-title">Collaboration & Community</h3>
+              <p class="content-subtitle">Cross-Organization Collaboration</p>
+
+              <p class="content-text">
+                Having been a part of a large tech firm, I deeply valued was the
+                abundance of resources and a pool of exceptional talents in the
+                organization. As Dynamo functions as a cross-product and
+                cross-platform automation tool, fostering seamless communication
+                and collaboration across various teams becomes indispensable.<br /><br />
+                Throughout the course of my internship, we proactively engaged
+                with platform service teams, working hand-in-hand to seamlessly
+                integrate their web-based interfaces such as the
+                <b>Large Model Viewer </b>and <b>AEC Data Model </b> into
+                Dynamo. This collaboration aimed at delivering an enriched and
+                immersive user experience. As the discussions unfolded and the
+                teams ventured into exploration, I identified and suggested
+                pertinent shortcuts based on insights garnered from lessons
+                learned by other groups. This input notably contributed to the
+                <b>efficient reallocation of resources within the team.</b>
+              </p>
+              <ol class="content-text">
+                <b
+                  >Special thanks to the following team who shared ideas with me
+                  and the Dynamo team.</b
+                >
+                <br /><b>[Autodesk PSET]</b>
+                Data Exchange Team, Authentication Team, Data Model Team, Large
+                Model Viewer Team
+                <br /><b>[Autodesk COO]</b>
+                Solution Architect
+                <br /><b>[Autodesk AEC Design]</b>
+                Design Studio, User Research Team
+              </ol>
+
+              <p class="content-subtitle">Community</p>
+
+              <p class="content-text">
+                <b> Dynamo's user community</b> wins it in the competitive
+                landscape. Community memebers share their insights and
+                collectively troubleshoot issues in a creative design field.
+                This robust and supportive knowledge-based community
+                significantly simplifies people's lives by facilitating a more
+                seamless utilization of this automation tool. What's more
+                important, the Dynamo Team plays an important role in supporting
+                the community, including
+                <b
+                  >engaging with users on forum and linkedin group, host
+                  bi-weekly Spirint Demos, and open to receive feedback from the
+                  user directly.</b
+                >
+                This experience has inspired me to become a dedicated advocate
+                within my community, working relentlessly to advance the
+                forefront of technology within the design industry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Container-cluster Container-2">
+          <a id="prev" class="nav-bottom" href="morrow.html">
+            <img class="image-80" src="img/mw_000.gif" />
+            <div class="section">PREV</div>
+            <div class="foot-text">morrow</div>
+            <div class="tag-div content-annotation">
+              <p>PRD</p>
+              <p>UI UX</p>
+              <p>Interactive Prototype</p>
+            </div>
+          </a>
+
+          <a id="next" class="nav-bottom" href="lotus.html">
+            <img class="image-80" src="img/04.jpg" />
+            <div class="section">NEXT</div>
+            <div class="foot-text">lotus app</div>
+            <div class="tag-div content-annotation">
+              <p>UI UX</p>
+              <p>iOS Dev</p>
+              <p>Startup</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/f_sidebar.js" type="text/javascript"></script>
+    <script src="js/f_phase.js" type="text/javascript"></script>
+    <script src="js/f_splash.js" type="text/javascript"></script>
+    <script src="js/f_gallery.js" type="text/javascript"></script>
+    <script src="js/f_contact.js" defer type="text/javascript"></script>
+
+  </body>
 </html>

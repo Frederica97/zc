@@ -24,7 +24,7 @@
 
 .dic-grid {
     display: grid;
-    grid-template-columns: 10px auto;
+    grid-template-columns: 30px auto;
     gap: 20px;
     padding: 10px 0;
 }
@@ -70,12 +70,6 @@
     width: 100%;
     border: 1.5px solid rgb(0, 0, 0);
     box-sizing: border-box;
-}
-
-.caption-title {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: "Arimo";
 }
 
 .gallery-stack:hover .gallery-canvas {
@@ -181,6 +175,57 @@ p {
 .inline-link {
     text-decoration: underline;
     font-weight: 500;
+}
+.dic-footnote,
+.expand-time{
+    line-height: 1.2;
+    font-size: 16px;
+}
+.oblique{
+    font-style: oblique;
+}
+
+.rotation{
+    transform: rotate(90deg);
+    text-align: center;
+    font-weight: 700;
+    padding-right: 0px;
+    margin-top:60px;
+}
+.expand-col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0;
+    margin: 0px auto;
+
+}
+.expand-col-2 div{
+    padding-left: 30px;
+
+}
+
+.right-border{
+    border-right: 0.5px solid #303030;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.expand-white{
+    padding-top: 300px;
+    margin-top:0;
+    padding-bottom: 20px;
+}
+.expand-content{
+    line-height: 1.2;
+    font-size: 1.6rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.expand-time{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 

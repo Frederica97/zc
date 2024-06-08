@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                 }
                 optionResult.src = imageName;
-                console.log(element);
-                console.log(imageName);
                 element.getElementsByClassName("circle")[0].classList.add("circle-solid");
                 option0.getElementsByClassName("circle")[0].classList.remove("circle-solid");
                 element.style.transition = "all 500ms";
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     function refreshOption() {
-        console.log("trigger");
         hoverOption(option0);
         hoverOption(option1);
         hoverOption(option3);
