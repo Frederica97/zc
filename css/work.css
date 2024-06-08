@@ -6,6 +6,7 @@
     position: relative;
 }
 
+
 .no-margintop {
     margin-top: 0px !important;
 }
@@ -265,5 +266,21 @@ p {
         width: 400px;
         text-align: center;
         margin: 0px auto;
+    }
+}
+
+main{
+    zoom:100%;
+}
+
+@media (min-width: 2000px) {
+    main {
+        zoom: 110%;
+    }
+}
+
+@media (min-width: 2300px) {
+    main {
+        zoom: 120%;
     }
 }
