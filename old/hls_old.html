@@ -43,7 +43,7 @@
               <a id="Menu-about" href="zc.html">About</a>
             </div>
             <div class="Menu-item">
-              <a id="Menu-contact">Contact</a>
+              <a id="Menu-contact" >Contact</a>
             </div>
           </div>
         </div>
@@ -157,23 +157,28 @@
             >
               <div class="Container-cluster" style="padding-bottom: 0px">
                 <h5 class="section" style="border-left: 1.4rem solid #9c5856">
-                  IDEA
+                  GEN-AI
                 </h5>
                 <h3 class="content-title">
-                  Use Large Language Models to Generate Subject Headings with
-                  Book Title and Summary
+                  Use LLM to Generate Subject Headings with book titile and
+                  summary
                 </h3>
                 <p class="content-text">
-                  Assigning accurate book's subject headings is a crucial but
-                  time-consuming part of library cataloging. It requires
-                  in-depth knowledge of subject taxonomies and familiarity with
-                  the library's collections. However, the process is iterative
-                  in nature and does not require perfect accuracy initially.
-                  These characteristics make cataloging amenable to AI
-                  assistance.
+                  LLM for book cataloging utilizes advanced
+                  <b> natural language processing</b> capabilities to understand
+                  and extract relevant concepts from provided texts. By
+                  analyzing the title and summary, the LLM can identify key
+                  themes and topics, assigning appropriate subject headings and
+                  positioning them among the right neighbors in knowledge
+                  networks. <br /><br />This approach not only automates the
+                  cataloging process, but also reduces the need for specialized
+                  expertise in subject classification. Additionally, using an
+                  LLM helps to standardize the classification process,
+                  potentially minimizing human error and bias in the assignment
+                  of subject terms.
                 </p>
                 <video autoplay loop muted width="100%">
-                  <source type="video/mp4" src="img/hls_36.mp4" />
+                  <source type="video/mp4" src="img/hls_28.mp4" />
                 </video>
               </div>
             </div>
@@ -182,141 +187,185 @@
 
           <section class="Container-cluster" style="padding-top: 0px">
             <h5 class="section" style="border-left: 1.4rem solid #9c5856">
-              Proof of Concept Testing
+              Proof of Concept
             </h5>
-            <h3 class="content-title">
-              Learn the Limitation from Early Experiment
-            </h3>
-            <p class="content-subtitle">Vanilla LLMs</p>
+            <h3 class="content-title">Learn the Limitation of Vanilla LLMs</h3>
+            <p class="content-subtitle">Early Experiment</p>
             <p class="content-text">
-              An early experiment using ChatGPT (GPT-3.5) to generate headings
-              from book titles and summaries achieved <b>70% </b>accuracy.
-              Significantly, it took catalogers only <b>half</b> as long on
-              average to process items with AI-generated headings compared to
-              doing it from scratch. This proved the viability of using AI to
-              aid the workflow. <br /><br />
-              However, further testing uncovered some <b>limitations</b>.
-              Headings varied between model runs, undermining reliability. The
-              model also struggled with authority distinction, such as between
-              Library of Congress Subject Headings (LCSH) and Faceted
-              Application of Subject Terminology (FAST). Additionally, the
-              barebones AI responses required substantial post-processing by
-              catalogers.
+              The initial version using ChatGPT (GPT-3.5) appears promising.
+              After evaluating <b>400 items</b>, it achieved
+              <b>70% accuracy</b> and required <b>half time</b> as an
+              experienced cataloger for assigning subject headings. It also
+              eliminates the need for high domain knowledge and lowers the
+              professional bar for the task. <br /><br />
+              However, while library catalogers recognize the potential of LLMs,
+              they are still far from being directly integrated into the current
+              workflow. Early experiments highlighted <b>challenges</b> with the
+              vanilla version, prompting us to investigate multiple solutions to
+              improve accuracy and <b>enhance Human-AI interaction</b>.
             </p>
-            <div class="Container-2-left" style="margin: auto">
-              <div class="Container-image">
-                <img src="img/hls_07_1.png" alt />
-              </div>
-              <div>
-                <p class="content-text">
-                  <b>Vanilla LLM Workflow</b>
-                </p>
-                <p class="content-annotation">
-                  Tested on <b>300+</b> book items, Vanilla LLM achieves
-                  <b>70%</b> of the accuracy and saves <b>half</b> of the time.
-                </p>
-              </div>
+            <div class="Container-full Container-image">
+              <img src="img/hls_07_1.png" alt />
+            </div>
+
+            <p class="content-subtitle">
+              Challenges of GenAI for Book Cataloging
+            </p>
+            <div>
+              <p class="content-text">
+                <b>1. Lack of Stability and Hallucinations</b>
+              </p>
+              <p class="content-annotation">
+                The generated subject headings can vary between different runs
+                with a 70% similarities between each runs. This randomness
+                undermines the reliability needed for consistent cataloging
+                practices. Meanwhile, LLMs can sometimes generate incorrect or
+                overconfident information, often referred to as
+                "hallucinations."
+              </p>
+            </div>
+
+            <div>
+              <p class="content-text">
+                <b>2. Difficulty Distinguishing Types of Subject Headings</b>
+              </p>
+              <p class="content-annotation">
+                Subject headings have different authorities, like Library of
+                Congress Subject Headings (LCSH) and Faceted Application of
+                Subject Terminology (FAST), etc. With LLM trained on both data,
+                it often misuse lcsh subject heading in its response.
+              </p>
+            </div>
+            <div>
+              <p class="content-text">
+                <b>3. Human-AI Interaction</b>
+              </p>
+              <p class="content-annotation">
+                The LLM response is barebone. It requires librarians' effort to
+                find book titile adn summaries online, and post-proceed the AI
+                response to accurate and right-format responses. To better
+                facilitate the workflow, we want the application to perfom
+                closer to an agent and take over the end-to-end task with human
+                interaction and intervention.
+              </p>
             </div>
           </section>
 
+          <section
+            id="section2"
+            class="Container-full background-image-wrap"
+            style="
+              background-image: url('img/hls_19.png');
+              width: 90%;
+              margin: 0px auto;
+              padding-bottom: 0px;
+            "
+          ></section>
+
           <div class="Container-cluster" style="padding-top: 0px">
             <h5 class="section" style="border-left: 1.4rem solid #9c5856">
-              Solutions - 1
+              Experiments
             </h5>
             <h3 class="content-title">Overlaps among Multiple LLM Responses</h3>
 
-            <!-- <p class="content-text">
-              To address variability, we ran titles through multiple LLMs and
-              assigned higher weights to overlapping headings. To improve
-              authority distinction, we used prompt engineering and Retrieval
-              Augmented Generation (RAG) leveraging the library's book data.
-              <br /><br />
-              We also developed an AI agent that reveals the automated workflow
-              steps to catalogers. This allows them to interact with and modify
-              the process to address any limitations. For example, catalogers
-              provided feedback that helped separate algorithms for topics
-              versus geographical headings.
-            </p> -->
-            <div>
-              <!-- <p class="content-subtitle">
-                Overlaps among Multiple LLM Responses
-              </p> -->
-              <div class="Container-2">
-                <div>
-                  <p class="content-text">
-                    <b>Challenge</b>
-                  </p>
-                  <p class="content-text">
-                    <b>1. Lack of Stability and Hallucinations</b>
-                  </p>
-                  <p class="content-annotation">
-                    The generated subject headings can vary between different
-                    runs with a 70% similarities between each runs. This
-                    randomness undermines the reliability needed for consistent
-                    cataloging practices. Meanwhile, LLMs can sometimes generate
-                    incorrect or overconfident information, often referred to as
-                    "hallucinations."
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text">
-                    <b>Solution</b>
-                  </p>
-                  <p class="content-text">
-                    <b>1.1 Multiple LLMs: </b>
-                  </p>
-                  <p class="content-annotation">
-                    We ran prompts through multiple Foundation Models to
-                    generate subject headings and assigned higher weights in the
-                    result with overlap headings to coutner randomness.
-                  </p>
-                  <p class="content-text">
-                    <b>1.2 Cross-referencing with SearchFAST API: </b>
-                  </p>
-                  <p class="content-annotation">
-                    With LLM responses, we cross-referenced these outputs with
-                    established FAST heading databse through SearchFAST API to
-                    filter out errors.
-                  </p>
-                </div>
+            <div class="Container-2">
+              <div>
+                <p class="content-text">
+                  <b>Challenge</b>
+                </p>
+                <p class="content-text">
+                  <b>1. Lack of Stability and Hallucinations</b>
+                </p>
+                <p class="content-annotation">
+                  The generated subject headings can vary between different runs
+                  with a 70% similarities between each runs. This randomness
+                  undermines the reliability needed for consistent cataloging
+                  practices. Meanwhile, LLMs can sometimes generate incorrect or
+                  overconfident information, often referred to as
+                  "hallucinations."
+                </p>
               </div>
-
-              <div class="Container-4" style="align-items: start; margin: 0px">
-                <div class="content-text">
-                  <b class="content-title"> 214 </b>
-                  Book Items<br />
-                  <b class="content-title"> 3 </b>
-                  AI bots
-                </div>
-                <div>
-                  <p class="content-text">
-                    <b class="content-title"> 192</b>
-                    out of 214 have overlapped options among 3 bots<br />
-                    <b class="content-title"> 89.7% </b> Overlap ratio
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text">
-                    <b class="content-title"> 121.4% </b> accuracy compared to a
-                    single AI bot response.
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text">
-                    <b class="content-title"> 9 </b> minutes cross-referencing
-                    SearchFast API for 214 items
-                  </p>
-                </div>
-              </div>
-              <div class="Container-image" style="padding-top: 60px">
-                <img src="img/hls_21.png" />
+              <div>
+                <p class="content-text">
+                  <b>Solution</b>
+                </p>
+                <p class="content-text">
+                  <b
+                    >1. Overlaps among Multiple LLM Responses and
+                    Cross-reference with FAST API
+                  </b>
+                </p>
+                <p class="content-annotation">
+                  We propose running the title through three different
+                  foundation models and assigning higher weights to the
+                  overlapping headings to counterbalance the randomness. By
+                  cross-referencing with the FAST API, we filter out options
+                  that lack accurate related FAST headings.
+                </p>
               </div>
             </div>
+            <p class="content-text">
+              To address the inherent instability and occasional inaccuracies in
+              LLM-generated subject headings, a more robust approach is
+              necessary. This involves leveraging
+              <b>multiple Foundation Models</b> to generate subject headings and
+              then <b>cross-referencing</b> these outputs with established
+              databases to filter out errors. The following experiment and its
+              analysis delve into the effectiveness of this approach, presenting
+              an <b>21.4% accuracy improvement </b>compared to a single
+              response.
+            </p>
+            <div class="Container-4" style="margin: 0px">
+              <div>
+                <p class="content-text">
+                  <b class="content-title"> 214 </b> Book Items<br />
+                  <b class="content-title"> 3 </b> AI bots <br />
+                  <b class="content-title"> 642 </b> Queries
+                </p>
+              </div>
+              <div>
+                <p class="content-text">
+                  <b class="content-title">98.6% </b> responses are valid
+                  cross-referencing SearchFast API.
+                </p>
+              </div>
+              <div></div>
+              <div>
+                <p class="content-text">
+                  <b class="content-title"> 9 </b> mins cross-referencing
+                  SearchFast API for 856 items.
+                </p>
+              </div>
+              <div>
+                <p class="content-text">
+                  <b class="content-title"> 192</b>
+                  out of 214 have overlapped options among 4 bots.
+                </p>
+              </div>
+              <div>
+                <p class="content-text">
+                  <b class="content-title"> 89.7% </b> Overlap ratio for
+                  multiple LLM resposne.<br />
+                </p>
+              </div>
+              <div>
+                <p class="content-text">
+                  <b class="content-title"> 121.4% </b> accuracy compared to a
+                  single AI bot response.
+                </p>
+              </div>
+            </div>
+            <div class="Container-image" style="padding-top: 40px">
+              <img src="img/hls_21.png" />
+            </div>
+            <!-- <div class="Container-image">
+              <img src="img/hls_15.png" class="" />
+            </div> -->
           </div>
 
           <section class="Container-cluster">
             <h5 class="section" style="border-left: 1.4rem solid #9c5856">
-              Solutions - 2
+              Experiments
             </h5>
             <h3 class="content-title">
               Retrieval Augumented Generation (RAG) with library data and Prompt
@@ -365,23 +414,49 @@
                 </p>
               </div>
             </div>
-            <div class="Container-full">
-              <div class="Container-image">
-                <img src="img/hls_20.png" />
-              </div>
+            <p class="content-subtitle">Prompt Engineering</p>
+            <p class="content-text">
+              With an LLM functioning as a blackbox from the user's perspective,
+              the primary interface is the prompt. The prompt guides the model
+              to retrieve and generate relevant content from its vast training
+              data. Through trial and error, we learned the importance of
+              providing detailed context and avoiding irrelevant or misleading
+              keywords like "LCSH." Another approach involved asking the LLM to
+              provide related book information and refer to their subject
+              headings, but this resulted in worse performance. The model often
+              responded with "Sorry," increasing the chance of failure.
+            </p>
+            <p class="content-subtitle">
+              Retrieval Augumented Generation (RAG)
+            </p>
+            <p class="content-text">
+              We used Langchain to implement the RAG model. Using Harvard
+              LibraryCloud API, we gathered 10k books with summaries. 4,000
+              items have subject headings in FAST classification type. Using
+              those 4,000 books as inital dataset, we append the RAG model
+              before the LLM, prompting to retreive the closest book with the
+              new book. We input the new book query and the context as the
+              related book inforamtion to the LLM. The result is significantly
+              improved. Here are some examples. <br />
+            </p>
+            <div class="Container-image" style="padding-top: 40px">
+              <img src="img/hls_20.png" />
             </div>
+            <!-- <div class="Container-2 Container-full">
+              <div class="Container-image">
+                <img src="img/hls_17.png" class="" />
+                <p class="content-text">
+                  <b>Prompt Engineering </b> &mdash; The trial and test prompt
+                  has three major progression -- the more context it contains,
+                  the more text it gain.
+                </p>
+              </div>
+              <div class="Container-image">
+                <img src="img/hls_18.png" class="" />
+              </div>
+            </div> -->
           </section>
 
-          <section
-            id="section2"
-            class="Container-full background-image-wrap"
-            style="
-              background-image: url('img/hls_19.png');
-              width: 98%;
-              margin: 0px auto;
-              padding-bottom: 0px;
-            "
-          ></section>
           <section class="Container-cluster">
             <h5 class="section" style="border-left: 1.4rem solid #9c5856">
               Human-AI Interaction
@@ -413,50 +488,39 @@
                   <b>Solution</b>
                 </p>
                 <p class="content-text">
-                  <b>3.1 AI Agent - with an end-to-end workflow</b>
+                  <b>3. AI Agent - Reveal Steps and Allow User Interaction</b>
                 </p>
                 <p class="content-annotation">
-                  Given the limitations of the vanilla LLM query, we have
-                  developed an end-to-end workflow extending beyond a simple AI
-                  bot query, including data input preparation, to
-                  post-procession the AI-Bot responses.
-                </p>
-                <p class="content-text">
-                  <b>3.2 UX Design - reveal Steps and Allow User Interaction</b>
-                </p>
-                <p class="content-annotation">
-                  The AI cataloger is designed to reveals results at each step,
-                  permits manual modifications, and facilitates better human-AI
-                  interaction through its design. By creating a transparent
-                  workflow, we can also evaluate performance by isolating the
-                  results at each step.
+                  The AI cataloger is designed as an end-to-end product that
+                  reveals results at each step, permits manual modifications,
+                  and facilitates better human-AI interaction through its
+                  design. By creating a transparent workflow, we can also
+                  evaluate performance by isolating the results at each step.
                 </p>
               </div>
             </div>
-            <!-- <p class="content-text">
-              Our previous experiments and tests showed that each step doesn't
-              ensure a 100% success rate.  Users can input book
+            <p class="content-text">
+              Given the limitations of the vanilla LLM query, we have developed
+              an end-to-end workflow extending beyond a simple AI bot query. Our
+              previous experiments and tests showed that each step doesn't
+              ensure a 100% success rate. To improve this, we've made the
+              process more transparent to facilitate better debugging, user
+              engagement, and workflow analysis. Users can input book
               information, modify query details, review the AI responses and
               FAST API results, and make adjustments based on their expertise.
               This comprehensive approach ultimately produces the subject
               headings for the book item.
-            </p> -->
-            <div class="Container-full">
-              <video autoplay loop muted width="100%">
-                <source type="video/mp4" src="img/hls_31.mp4" />
-              </video>
-              <div class="Container-image">
-                <img src="img/hls_30.png" />
-              </div>
-            </div>
-
+            </p>
+            <video autoplay loop muted width="100%">
+              <source type="video/mp4" src="img/hls_13.mp4" />
+            </video>
             <div class="Container-full" style="padding-bottom: 0px !important">
               <div
                 class="Container-galleries"
                 style="margin-bottom: 60px !important"
               >
                 <div
-                  class="gallery-image gallery-display"
+                  class="gallery-image  gallery-display"
                   style="background-image: url('img/hls_23.png')"
                 ></div>
                 <div
@@ -615,6 +679,7 @@
     <script src="js/f_splash.js" type="text/javascript"></script>
     <script src="js/f_gallery.js" type="text/javascript"></script>
     <script src="js/f_contact.js" defer type="text/javascript"></script>
-    <!-- <script src="js/window.js" type="text/javascript"></script> -->
+    <script src="js/window.js" type="text/javascript"></script>
+
   </body>
 </html>
