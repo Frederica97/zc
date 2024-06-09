@@ -202,6 +202,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "wheel",
     (e) => {
       totalScroll += e.deltaY;
+      if (totalScroll > 4000) {
+        totalScroll = 4000
+      }
+      if (totalScroll < -200){
+        totalScroll = -200
+      }
       ScrollNow(totalScroll);
     },
     true
@@ -209,9 +215,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function ScrollNow(totalScroll) {
-  const indexProject = parseInt((totalScroll + 700) / 300);
+  let indexProject = parseInt((totalScroll + 700) / 300);
   if (indexProject > 2) {
-    if (indexProject > portfolio_set.length - 1) {
+    if (indexProject > portfolio_set.length) {
       indexProject = 13;
     }
     let index = `${indexProject}`;
@@ -219,7 +225,7 @@ function ScrollNow(totalScroll) {
     if (indexProject < 10) {
       index = "0" + index;
     }
-    const element = document.getElementById(index);
+    let element = document.getElementById(index);
     var pattern = "repeat(13, 12px";
     // deal with first image, change the left-bar color
     if (cover) {
