@@ -16,7 +16,7 @@ let me know what you think zinanchi@gsd.harvard.edu <br />
 **contact** -- email and social media contacts
 
 ## demo
-<video width="320" height="240" controls>
+<video width="320" height="240" auto muted>
   <source src="file/demo.mp4" type="video/mp4">
 </video>
 
