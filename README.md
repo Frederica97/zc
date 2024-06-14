@@ -6,11 +6,12 @@ coded with passion <br />
 let me know what you think zinanchi@gsd.harvard.edu <br />
 
 ## content
-**main** -- an overview about zinan in a album format. Know me step by step
+**main** -- an overview of zinan in an album format. Scroll down to open
 
-**work**  -- three selected work: Lotus as a design engineer [Swift], Autodesk Dynamo as a user experience, with prototype in C#, Porsche Changsha Store as a main designer with weekly communication with stakeholders. 
 
-**about** -- you will read about my past experience and my education background in this section
+**work**  -- selected work
+
+**about** -- more info about me, inc. experience, education, and skills
 
 **contact** -- email and social media contacts
 
@@ -19,5 +20,7 @@ let me know what you think zinanchi@gsd.harvard.edu <br />
   <source src="file/demo.mp4" type="video/mp4">
 </video>
 
-![](file/demo.mp4)
+https://github.com/Frederica97/zc/assets/31479492/605abf95-ac65-42e3-835f-2da379c437fe
+
+
 
