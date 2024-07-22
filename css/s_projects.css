@@ -402,6 +402,21 @@ b {
     color: #2d7d52;
     background-color: #2d7d5211
 }
+.tag-purple {
+    font-size: 1.4rem;
+    border: 1px solid #5f60ff;
+    color: #5f60ff;
+    background-color: #5f5fff11
+}
+/* .tag-ad-yellow {
+    font-size: 1.4rem;
+    border: 1px solid #f6c549;
+    color: #f6c549;
+    background-color: #f6c54911
+} */
+
+
+
 
 /* ----------------------------- info */
 
