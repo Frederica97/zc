@@ -55,8 +55,9 @@
 }
 
 /* .Container-2-left .content-text {
-    line-height: 2;
-    font-size: 0.9rem;
+
+
+font-size: 0.9rem;
     margin-top: 0px;
 }
 
@@ -111,8 +112,8 @@
 .Container-project-title {
     display: flex;
     align-items: center;
-    width: 20%;
-    margin-left: 17%;
+    width: 18%;
+    margin-left: 17.5%;
     padding-right: 2%;
     max-width: 350px;
     height: 100%;
@@ -126,7 +127,7 @@
 .Container-project-title h2 {
     /* padding-top: 0px; */
     /* margin-top: 0px; */
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: 900;
     letter-spacing: 0.2em;
     font-family: "Roboto Slab";
@@ -193,17 +194,20 @@
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
-    background-color: rgba(128, 128, 128, 0.317);
-    /* border-radius: 50%; */
-    margin: 10px 0;
+    height: 6px;
+    color: rgb(128, 128, 128);
+    line-height: 1;
+    margin: 8px 0;
     cursor: pointer;
+    opacity: 0.35;
 }
 
 .dot.active {
-    background-color: rgb(128, 128, 128) !important;
-    box-shadow:0.75px 0px 0px rgb(136, 124, 111) ;
+    opacity: 1;
+}
+
+.dot .section {
+    border-left: 8px solid rgb(128, 128, 128) !important;
 }
 
 .content {
@@ -402,6 +406,25 @@ b {
     color: #2d7d52;
     background-color: #2d7d5211
 }
+.tag-red {
+    font-size: 1.4rem;
+    color: #B70B00;
+    background-color: #F8E7E5;
+    border-radius: 3rem !important;
+    border: 0px solid #ffffff !important;
+}
+.tag-yellow {
+    font-size: 1.4rem;
+    color: #DB9B00;
+    background-color: #FFF6D6;
+    border-radius: 3rem !important;
+    border: 0px solid #ffffff !important;}
+.tag-green {
+    font-size: 1.4rem;
+    color: #008529;
+    background-color: #E5F3EA;
+    border-radius: 3rem !important;
+    border: 0px solid #ffffff !important;}
 .tag-purple {
     font-size: 1.4rem;
     border: 1px solid #5f60ff;
@@ -575,6 +598,11 @@ a {
 
 .hls-solution{
     color:#9e6c64
+}
+.stats{
+    font-size: 2.8rem !important;
+    line-height: 0.5;
+
 }
 
 /* 
