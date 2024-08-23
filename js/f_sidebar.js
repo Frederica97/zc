@@ -29,7 +29,7 @@ function updateSideBar() {
             }
         }
     }
-    dots.forEach((dot) => { dot.classList.remove("active"); });
+    dots.forEach((dot) => {dot.classList.remove("active"); });
     for (let i = 0; i < sections.length; i++) {
         const sectionOnScreen = sections[i].getBoundingClientRect().top;
         if (sectionOnScreen < 10) {
