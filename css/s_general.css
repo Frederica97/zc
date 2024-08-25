@@ -33,6 +33,38 @@ body {
     padding: 70px 0;
 }
 
+@media (max-width: 1440px) {
+    .Container-cluster {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+}
+@media (max-width: 1030px) {
+    .Container-cluster {
+        position: relative;
+        width: 68%;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+}
+@media (max-width: 992px) {
+    .Container-cluster {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+}
+@media (max-width: 768px) { /* For narrower screens */
+    .Container-cluster {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+}
 /* ----------------------------- text ------------------------------*/
 
 .content-title {
