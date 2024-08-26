@@ -723,6 +723,7 @@ a {
         margin-left: auto !important;
         margin-right: auto !important;
         max-width: 500px;
+        background-color: transparent;
     }
     #section-cover .Container-project-title *{
         color: black;
