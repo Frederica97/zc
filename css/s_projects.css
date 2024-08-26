@@ -692,11 +692,8 @@ a {
 } */
 
 /* Media Queries for Mobile Responsiveness */
-/* Media Queries for Mobile Responsiveness */
 @media (max-width: 1200px) {
-    .Container-4 {
-        grid-template-columns: 1fr 1fr;
-    }
+
 }
 
 @media (max-width: 1080px) {
@@ -725,6 +722,9 @@ a {
         margin-right: auto !important;
         max-width: 500px;
     }
+    #section-cover .Container-project-title *{
+        color: black;
+    }
     .skewed {
         margin-left: auto !important;
         margin-right:auto !important;
@@ -735,6 +735,9 @@ a {
 @media (max-width: 768px) {
     #side-nav {
         display: none;
+    }
+    .Container-4 {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
