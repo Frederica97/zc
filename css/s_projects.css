@@ -693,7 +693,9 @@ a {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 1200px) {
-
+    #side-nav {
+        display: none;
+    }
 }
 
 @media (max-width: 1080px) {

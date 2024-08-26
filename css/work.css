@@ -278,12 +278,23 @@ p {
 main{
     zoom:100%;
 }
+@media (max-width: 1100px) {
+    main {
+        zoom: 110%;
+    }
+}
+@media (max-width: 1170px) {
+    main {
+        zoom: 150%;
+    }
+}
 
 @media (min-width: 2000px) {
     main {
         zoom: 110%;
     }
 }
+
 
 @media (min-width: 2300px) {
     main {
