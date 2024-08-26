@@ -701,9 +701,6 @@ a {
 
 @media (max-width: 1080px) {
 
-    .Container-2 {
-        grid-template-columns: 1fr;
-    }
     .info {
         margin-top: 20 !important;
         width: 80%;
@@ -726,7 +723,7 @@ a {
         text-align: center;
         margin-left: auto !important;
         margin-right: auto !important;
-        /* max-width: 500px; */
+        max-width: 500px;
     }
     .skewed {
         margin-left: auto !important;
@@ -749,6 +746,9 @@ a {
     }
 
     .Container-3 {
+        grid-template-columns: 1fr;
+    }
+    .Container-2 {
         grid-template-columns: 1fr;
     }
 }
